@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  fortiaudit:
+    build: .
+    image: fortiaudit:latest
+    container_name: fortiaudit
+    volumes:
+      - ./reports:/app/reports
+      - ./configs:/app/configs
+      - ./logs:/app/logs
+    environment:
+      - FORTI_HOST=${FORTI_HOST:-}
+      - FORTI_USER=${FORTI_USER:-admin}
+    stdin_open: true
+    tty: true

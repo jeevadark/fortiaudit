@@ -1,0 +1,61 @@
+Metadata-Version: 2.4
+Name: fortiaudit
+Version: 1.0.0
+Summary: Comprehensive Security Audit Tool for Fortinet FortiGate
+Home-page: https://github.com/yourusername/fortiaudit
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Security
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: paramiko>=3.4.0
+Requires-Dist: requests>=2.31.0
+Requires-Dist: urllib3>=2.1.0
+Requires-Dist: pytest>=7.4.3
+Requires-Dist: pytest-cov>=4.1.0
+Requires-Dist: pytest-mock>=3.12.0
+Requires-Dist: black>=23.12.0
+Requires-Dist: flake8>=6.1.0
+Requires-Dist: pylint>=3.0.3
+Requires-Dist: mkdocs>=1.5.3
+Requires-Dist: mkdocs-material>=9.5.2
+Requires-Dist: bandit>=1.7.5
+Requires-Dist: pyyaml>=6.0.1
+Requires-Dist: python-dotenv>=1.0.0
+Requires-Dist: cryptography>=41.0.0
+Requires-Dist: bcrypt>=4.1.0
+Requires-Dist: jinja2>=3.1.2
+Requires-Dist: reportlab>=4.0.7
+Requires-Dist: markdown>=3.5.1
+Requires-Dist: pandas>=2.1.4
+Requires-Dist: openpyxl>=3.1.2
+Requires-Dist: matplotlib>=3.8.2
+Requires-Dist: plotly>=5.18.0
+Requires-Dist: rich>=13.7.0
+Requires-Dist: colorama>=0.4.6
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: tqdm>=4.66.1
+Requires-Dist: tabulate>=0.9.0
+Requires-Dist: python-dateutil>=2.8.2
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# FortiAudit
+FortiGate Firewall Security Audit Tool

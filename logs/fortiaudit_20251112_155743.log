@@ -1,0 +1,17 @@
+2025-11-12 15:57:43 | INFO     | fortiaudit.core.audit_engine:__init__:50 - Audit Engine initialized - Session: 20251112_155501
+2025-11-12 15:57:43 | INFO     | fortiaudit.core.audit_engine:run:60 - ======================================================================
+2025-11-12 15:57:43 | INFO     | fortiaudit.core.audit_engine:run:61 - STARTING SECURITY AUDIT
+2025-11-12 15:57:43 | INFO     | fortiaudit.core.audit_engine:run:62 - ======================================================================
+2025-11-12 15:57:43 | INFO     | fortiaudit.core.audit_engine:_connect_to_firewall:96 - 
+[Phase 1/5] Connecting to firewall...
+2025-11-12 15:57:43 | INFO     | fortiaudit.core.audit_engine:_connect_to_firewall:97 - ----------------------------------------------------------------------
+2025-11-12 15:57:43 | INFO     | fortiaudit.core.audit_engine:_connect_to_firewall:104 - Connecting via SSH to 10.10.10.1...
+2025-11-12 15:57:43 | INFO     | fortiaudit.core.ssh_connector:__init__:60 - SSH Connector initialized for 10.10.10.1:22
+2025-11-12 15:57:43 | ERROR    | fortiaudit.core.ssh_connector:connect:126 - Unexpected error: Either password or key_file must be provided
+2025-11-12 15:57:43 | ERROR    | fortiaudit.core.audit_engine:_connect_to_firewall:137 - Connection failed: Failed to connect: Either password or key_file must be provided
+2025-11-12 15:57:43 | ERROR    | fortiaudit.core.audit_engine:run:90 - Audit failed: Failed to connect: Either password or key_file must be provided
+2025-11-12 15:57:43 | INFO     | fortiaudit.core.audit_engine:_disconnect:301 - 
+[Phase 5/5] Cleaning up...
+2025-11-12 15:57:43 | INFO     | fortiaudit.core.audit_engine:_disconnect:302 - ----------------------------------------------------------------------
+2025-11-12 15:57:43 | INFO     | fortiaudit.core.ssh_connector:disconnect:227 - Disconnected from 10.10.10.1
+2025-11-12 15:57:43 | INFO     | fortiaudit.core.audit_engine:_disconnect:307 - ✓ Disconnected from firewall

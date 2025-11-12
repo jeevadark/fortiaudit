@@ -1,0 +1,5 @@
+2025-11-12 15:51:57 | INFO     | __main__:test_logger:27 - Info message
+2025-11-12 15:51:57 | WARNING  | __main__:test_logger:28 - Warning message
+2025-11-12 15:51:57 | ERROR    | __main__:test_logger:29 - Error message
+2025-11-12 15:51:57 | DEBUG    | __main__:test_logger:30 - Debug message
+2025-11-12 15:51:59 | INFO     | fortiaudit.core.ssh_connector:__init__:60 - SSH Connector initialized for 192.168.1.1:22

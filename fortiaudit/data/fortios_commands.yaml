@@ -1,0 +1,13 @@
+# FortiOS Command Reference
+commands:
+  system_status:
+    command: "get system status"
+    description: "Get firewall system information"
+    
+  full_config:
+    command: "show full-configuration"
+    description: "Export complete configuration"
+    
+  admin_list:
+    command: "show system admin"
+    description: "List administrator accounts"

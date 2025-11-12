@@ -1,0 +1,4 @@
+2025-11-12 12:21:11 | INFO     | fortiaudit.core.ssh_connector:__init__:60 - SSH Connector initialized for 10.10.10.1:22
+2025-11-12 12:21:11 | INFO     | fortiaudit.core.ssh_connector:connect:96 - Using password authentication
+2025-11-12 12:21:11 | INFO     | fortiaudit.core.ssh_connector:connect:101 - Connecting to 10.10.10.1:22...
+2025-11-12 12:21:13 | ERROR    | fortiaudit.core.ssh_connector:connect:126 - Unexpected error: 

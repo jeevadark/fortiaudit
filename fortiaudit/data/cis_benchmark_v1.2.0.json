@@ -1,0 +1,3842 @@
+{
+  "benchmark": {
+    "title": "CIS Fortinet FortiOS Benchmark",
+    "version": "unknown"
+  },
+  "controls": [
+    {
+      "id": "1.1",
+      "title": "Ensure DNS server is configured (Automated) ..................................................................................... 13",
+      "section": "A",
+      "check_id": "A-11"
+    },
+    {
+      "id": "1.2",
+      "title": "Ensure intra-zone traffic is not always allowed (Manual) ...................................................................... 15",
+      "section": "A",
+      "check_id": "A-12"
+    },
+    {
+      "id": "1.3",
+      "title": "Disable all management related services on WAN port (Manual) ......................................................... 17",
+      "section": "A",
+      "check_id": "A-13"
+    },
+    {
+      "id": "2.1",
+      "title": "General Settings ............................................................................................................................ 20",
+      "section": "B",
+      "check_id": "B-21"
+    },
+    {
+      "id": "2.1.1",
+      "title": "Ensure 'Pre-Login Banner' is set (Automated) ................................................................................... 21",
+      "section": "B",
+      "check_id": "B-211"
+    },
+    {
+      "id": "2.1.2",
+      "title": "Ensure 'Post-Login-Banner' is set (Automated) ................................................................................. 23",
+      "section": "B",
+      "check_id": "B-212"
+    },
+    {
+      "id": "2.1.3",
+      "title": "Ensure timezone is properly configured (Manual) .............................................................................. 25",
+      "section": "B",
+      "check_id": "B-213"
+    },
+    {
+      "id": "2.1.4",
+      "title": "Ensure correct system time is configured through NTP (Automated) ................................................ 27",
+      "section": "B",
+      "check_id": "B-214"
+    },
+    {
+      "id": "2.1.5",
+      "title": "Ensure hostname is set (Automated) ................................................................................................. 30",
+      "section": "B",
+      "check_id": "B-215"
+    },
+    {
+      "id": "2.1.6",
+      "title": "Ensure the latest firmware is installed (Manual) ................................................................................. 32",
+      "section": "B",
+      "check_id": "B-216"
+    },
+    {
+      "id": "2.1.7",
+      "title": "Disable USB Firmware and configuration installation (Automated) .................................................... 35",
+      "section": "B",
+      "check_id": "B-217"
+    },
+    {
+      "id": "2.1.8",
+      "title": "Disable static keys for TLS (Automated) ............................................................................................ 37",
+      "section": "B",
+      "check_id": "B-218"
+    },
+    {
+      "id": "2.1.9",
+      "title": "Enable Global Strong Encryption (Automated) .................................................................................. 39",
+      "section": "B",
+      "check_id": "B-219"
+    },
+    {
+      "id": "2.1.10",
+      "title": "Ensure management GUI listens on secure TLS version (Manual) ................................................. 40",
+      "section": "B",
+      "check_id": "B-2110"
+    },
+    {
+      "id": "2.2",
+      "title": "Password Policy ............................................................................................................................ 42",
+      "section": "B",
+      "check_id": "B-22"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Ensure 'Password Policy' is enabled (Automated) ............................................................................. 43",
+      "section": "B",
+      "check_id": "B-221"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Ensure administrator password retries and lockout time are configured (Automated) ....................... 46",
+      "section": "B",
+      "check_id": "B-222"
+    },
+    {
+      "id": "2.3",
+      "title": "SNMP ............................................................................................................................................... 48",
+      "section": "B",
+      "check_id": "B-23"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Ensure only SNMPv3 is enabled (Automated) ................................................................................... 49",
+      "section": "B",
+      "check_id": "B-231"
+    },
+    {
+      "id": "2.3.2",
+      "title": "Allow only trusted hosts in SNMPv3 (Manual) ................................................................................... 52",
+      "section": "B",
+      "check_id": "B-232"
+    },
+    {
+      "id": "2.4",
+      "title": "Administrators and Admin Profiles ............................................................................................. 54",
+      "section": "B",
+      "check_id": "B-24"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Ensure default 'admin' password is changed (Manual) ...................................................................... 55",
+      "section": "B",
+      "check_id": "B-241"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Ensure all the login accounts having specific trusted hosts enabled (Manual) ................................... 57",
+      "section": "B",
+      "check_id": "B-242"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Ensure admin accounts with different privileges have their correct profiles assigned (Manual) ......... 60",
+      "section": "B",
+      "check_id": "B-243"
+    },
+    {
+      "id": "2.4.4",
+      "title": "Ensure idle timeout time is configured (Automated) ........................................................................... 64",
+      "section": "B",
+      "check_id": "B-244"
+    },
+    {
+      "id": "2.4.5",
+      "title": "Ensure only encrypted access channels are enabled (Automated) ................................................... 66",
+      "section": "B",
+      "check_id": "B-245"
+    },
+    {
+      "id": "2.4.6",
+      "title": "Apply Local-in Policies (Manual) ........................................................................................................ 68",
+      "section": "B",
+      "check_id": "B-246"
+    },
+    {
+      "id": "2.4.7",
+      "title": "Ensure default Admin ports are changed (Manual) ............................................................................ 70",
+      "section": "B",
+      "check_id": "B-247"
+    },
+    {
+      "id": "2.5",
+      "title": "High Availability ............................................................................................................................. 72",
+      "section": "B",
+      "check_id": "B-25"
+    },
+    {
+      "id": "2.5.1",
+      "title": "Ensure High Availability configuration is enabled (Automated) .......................................................... 73",
+      "section": "B",
+      "check_id": "B-251"
+    },
+    {
+      "id": "2.5.2",
+      "title": "Ensure \"Monitor Interfaces\" for High Availability devices is enabled (Automated) ............................. 76",
+      "section": "B",
+      "check_id": "B-252"
+    },
+    {
+      "id": "2.5.3",
+      "title": "Ensure HA Reserved Management Interface is configured (Manual) ................................................ 78",
+      "section": "B",
+      "check_id": "B-253"
+    },
+    {
+      "id": "3.1",
+      "title": "Ensure that unused policies are reviewed regularly (Manual) ............................................................... 82",
+      "section": "C",
+      "check_id": "C-31"
+    },
+    {
+      "id": "3.2",
+      "title": "Ensure that policies do not use \"ALL\" as Service (Automated) ............................................................. 84",
+      "section": "C",
+      "check_id": "C-32"
+    },
+    {
+      "id": "3.3",
+      "title": "Ensure firewall policy denying all traffic to/from Tor, malicious server, or scanner IP addresses using",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "3.4",
+      "title": "Ensure logging is enabled on all firewall policies (Manual) ................................................................... 88",
+      "section": "C",
+      "check_id": "C-34"
+    },
+    {
+      "id": "4.1",
+      "title": "Intrusion Prevention System (IPS) ............................................................................................... 91",
+      "section": "D",
+      "check_id": "D-41"
+    },
+    {
+      "id": "4.1.1",
+      "title": "Detect Botnet connections (Manual) .................................................................................................. 92",
+      "section": "D",
+      "check_id": "D-411"
+    },
+    {
+      "id": "4.1.2",
+      "title": "Apply IPS Security Profile to Policies (Manual) .................................................................................. 93",
+      "section": "D",
+      "check_id": "D-412"
+    },
+    {
+      "id": "4.2",
+      "title": "Antivirus ......................................................................................................................................... 94",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "4.2.1",
+      "title": "Ensure Antivirus Definition Push Updates are Configured (Automated) ............................................ 95",
+      "section": "D",
+      "check_id": "D-421"
+    },
+    {
+      "id": "4.2.2",
+      "title": "Apply Antivirus Security Profile to Policies (Manual) .......................................................................... 97",
+      "section": "D",
+      "check_id": "D-422"
+    },
+    {
+      "id": "4.2.3",
+      "title": "Enable Outbreak Prevention Database (Automated) ......................................................................... 98",
+      "section": "D",
+      "check_id": "D-423"
+    },
+    {
+      "id": "4.2.4",
+      "title": "Enable AI /heuristic based malware detection (Automated) ............................................................. 100",
+      "section": "D",
+      "check_id": "D-424"
+    },
+    {
+      "id": "4.2.5",
+      "title": "Enable grayware detection on antivirus (Automated) ....................................................................... 102",
+      "section": "D",
+      "check_id": "D-425"
+    },
+    {
+      "id": "4.3",
+      "title": "DNS Filter ...................................................................................................................................... 104",
+      "section": "D",
+      "check_id": "D-43"
+    },
+    {
+      "id": "4.3.1",
+      "title": "Enable Botnet C&C Domain Blocking DNS Filter (Automated) ........................................................ 105",
+      "section": "D",
+      "check_id": "D-431"
+    },
+    {
+      "id": "4.3.2",
+      "title": "Ensure DNS Filter logs all DNS queries and responses (Manual) ................................................... 107",
+      "section": "D",
+      "check_id": "D-432"
+    },
+    {
+      "id": "4.3.3",
+      "title": "Apply DNS Filter Security Profile to Policies (Manual) ..................................................................... 109",
+      "section": "D",
+      "check_id": "D-433"
+    },
+    {
+      "id": "4.4",
+      "title": "Application Control ...................................................................................................................... 110",
+      "section": "D",
+      "check_id": "D-44"
+    },
+    {
+      "id": "4.4.1",
+      "title": "Block high risk categories on Application Control (Manual) ............................................................. 111",
+      "section": "D",
+      "check_id": "D-441"
+    },
+    {
+      "id": "4.4.2",
+      "title": "Block applications running on non-default ports (Automated) .......................................................... 113",
+      "section": "D",
+      "check_id": "D-442"
+    },
+    {
+      "id": "4.4.3",
+      "title": "Ensure all Application Control related traffic is logged (Manual) ...................................................... 115",
+      "section": "D",
+      "check_id": "D-443"
+    },
+    {
+      "id": "4.4.4",
+      "title": "Apply Application Control Security Profile to Policies (Manual) ........................................................ 116",
+      "section": "D",
+      "check_id": "D-444"
+    },
+    {
+      "id": "5.1",
+      "title": "Automation ................................................................................................................................... 119",
+      "section": "E",
+      "check_id": "E-51"
+    },
+    {
+      "id": "5.1.1",
+      "title": "Enable Compromised Host Quarantine (Automated) ....................................................................... 120",
+      "section": "E",
+      "check_id": "E-511"
+    },
+    {
+      "id": "5.2",
+      "title": "Fabric Connectors ....................................................................................................................... 123",
+      "section": "E",
+      "check_id": "E-52"
+    },
+    {
+      "id": "5.2.1",
+      "title": "Configure Root FortiGate for Security Fabric ..................................................................... 124",
+      "section": "E",
+      "check_id": "E-521"
+    },
+    {
+      "id": "5.2.1.1",
+      "title": "Ensure Security Fabric is Configured (Automated) ....................................................................... 125",
+      "section": "E",
+      "check_id": "E-5211"
+    },
+    {
+      "id": "6.1",
+      "title": "SSL VPN ........................................................................................................................................ 128",
+      "section": "F",
+      "check_id": "F-61"
+    },
+    {
+      "id": "6.1.1",
+      "title": "Apply a Trusted Signed Certificate for VPN Portal (Manual) ............................................................ 129",
+      "section": "F",
+      "check_id": "F-611"
+    },
+    {
+      "id": "6.1.2",
+      "title": "Enable Limited TLS Versions for SSL VPN (Manual)....................................................................... 131",
+      "section": "F",
+      "check_id": "F-612"
+    },
+    {
+      "id": "7.1",
+      "title": "Configuring the maximum login attempts and lockout period (Automated) ......................................... 134",
+      "section": "G",
+      "check_id": "G-71"
+    },
+    {
+      "id": "8.1",
+      "title": "Enable Logging ............................................................................................................................ 137",
+      "section": "H",
+      "check_id": "H-81"
+    },
+    {
+      "id": "8.1.1",
+      "title": "Enable Event Logging (Automated) ................................................................................................. 138",
+      "section": "H",
+      "check_id": "H-811"
+    },
+    {
+      "id": "8.2",
+      "title": "Encrypt Logs Sent to FortiAnalyzer / FortiManager ................................................................. 140",
+      "section": "H",
+      "check_id": "H-82"
+    },
+    {
+      "id": "8.2.1",
+      "title": "Encrypt Log Transmission to FortiAnalyzer / FortiManager (Automated) ......................................... 141",
+      "section": "H",
+      "check_id": "H-821"
+    },
+    {
+      "id": "8.3",
+      "title": "Centralized Logging and Reporting ........................................................................................... 142",
+      "section": "H",
+      "check_id": "H-83"
+    },
+    {
+      "id": "8.3.1",
+      "title": "Centralized Logging and Reporting (Automated) ............................................................................. 143",
+      "section": "H",
+      "check_id": "H-831"
+    },
+    {
+      "id": "1.1",
+      "title": "Ensure DNS server is configured (Automated)",
+      "section": "A",
+      "check_id": "A-11"
+    },
+    {
+      "id": "208.91.112.52",
+      "title": "References:",
+      "section": "\u0110",
+      "check_id": "\u0110-2089111252"
+    },
+    {
+      "id": "4.9",
+      "title": "Configure Trusted DNS Servers on Enterprise Assets",
+      "section": "D",
+      "check_id": "D-49"
+    },
+    {
+      "id": "11.1",
+      "title": "Maintain Standard Security Configurations for",
+      "section": "K",
+      "check_id": "K-111"
+    },
+    {
+      "id": "1.2",
+      "title": "Ensure intra-zone traffic is not always allowed (Manual)",
+      "section": "A",
+      "check_id": "A-12"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "2.10",
+      "title": "Physically or Logically Segregate High Risk",
+      "section": "B",
+      "check_id": "B-210"
+    },
+    {
+      "id": "1.3",
+      "title": "Disable all management related services on WAN port",
+      "section": "A",
+      "check_id": "A-13"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "4.8",
+      "title": "Uninstall or Disable Unnecessary Services on",
+      "section": "D",
+      "check_id": "D-48"
+    },
+    {
+      "id": "1.6",
+      "title": "Address Unauthorized Assets",
+      "section": "A",
+      "check_id": "A-16"
+    },
+    {
+      "id": "2.1",
+      "title": "General Settings",
+      "section": "B",
+      "check_id": "B-21"
+    },
+    {
+      "id": "2.1.1",
+      "title": "Ensure 'Pre-Login Banner' is set (Automated)",
+      "section": "B",
+      "check_id": "B-211"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "5.1",
+      "title": "Establish Secure Configurations",
+      "section": "E",
+      "check_id": "E-51"
+    },
+    {
+      "id": "2.1.2",
+      "title": "Ensure 'Post-Login-Banner' is set (Automated)",
+      "section": "B",
+      "check_id": "B-212"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "11.1",
+      "title": "Maintain Standard Security Configurations for",
+      "section": "K",
+      "check_id": "K-111"
+    },
+    {
+      "id": "2.1.3",
+      "title": "Ensure timezone is properly configured (Manual)",
+      "section": "B",
+      "check_id": "B-213"
+    },
+    {
+      "id": "8.4",
+      "title": "Standardize Time Synchronization",
+      "section": "H",
+      "check_id": "H-84"
+    },
+    {
+      "id": "6.1",
+      "title": "Utilize Three Synchronized Time Sources",
+      "section": "F",
+      "check_id": "F-61"
+    },
+    {
+      "id": "2.1.4",
+      "title": "Ensure correct system time is configured through NTP",
+      "section": "B",
+      "check_id": "B-214"
+    },
+    {
+      "id": "8.4",
+      "title": "Standardize Time Synchronization",
+      "section": "H",
+      "check_id": "H-84"
+    },
+    {
+      "id": "6.1",
+      "title": "Utilize Three Synchronized Time Sources",
+      "section": "F",
+      "check_id": "F-61"
+    },
+    {
+      "id": "2.1.5",
+      "title": "Ensure hostname is set (Automated)",
+      "section": "B",
+      "check_id": "B-215"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "5.1",
+      "title": "Establish Secure Configurations",
+      "section": "E",
+      "check_id": "E-51"
+    },
+    {
+      "id": "2.1.6",
+      "title": "Ensure the latest firmware is installed (Manual)",
+      "section": "B",
+      "check_id": "B-216"
+    },
+    {
+      "id": "4.1",
+      "title": "Establish and Maintain a Secure Configuration Process",
+      "section": "D",
+      "check_id": "D-41"
+    },
+    {
+      "id": "2.2",
+      "title": "Ensure Software is Supported by Vendor",
+      "section": "B",
+      "check_id": "B-22"
+    },
+    {
+      "id": "8.2",
+      "title": "Ensure Anti-Malware Software and Signatures are",
+      "section": "H",
+      "check_id": "H-82"
+    },
+    {
+      "id": "11.4",
+      "title": "Install the Latest Stable Version of Any Security-",
+      "section": "K",
+      "check_id": "K-114"
+    },
+    {
+      "id": "2.1.7",
+      "title": "Disable USB Firmware and configuration installation",
+      "section": "B",
+      "check_id": "B-217"
+    },
+    {
+      "id": "4.8",
+      "title": "Uninstall or Disable Unnecessary Services on",
+      "section": "D",
+      "check_id": "D-48"
+    },
+    {
+      "id": "11.3",
+      "title": "Use Automated Tools to Verify Standard Device",
+      "section": "K",
+      "check_id": "K-113"
+    },
+    {
+      "id": "2.1.8",
+      "title": "Disable static keys for TLS (Automated)",
+      "section": "B",
+      "check_id": "B-218"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "4.8",
+      "title": "Uninstall or Disable Unnecessary Services on",
+      "section": "D",
+      "check_id": "D-48"
+    },
+    {
+      "id": "5.1",
+      "title": "Establish Secure Configurations",
+      "section": "E",
+      "check_id": "E-51"
+    },
+    {
+      "id": "2.1.9",
+      "title": "Enable Global Strong Encryption (Automated)",
+      "section": "B",
+      "check_id": "B-219"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "5.1",
+      "title": "Establish Secure Configurations",
+      "section": "E",
+      "check_id": "E-51"
+    },
+    {
+      "id": "2.1.10",
+      "title": "Ensure management GUI listens on secure TLS version",
+      "section": "B",
+      "check_id": "B-2110"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "12.3",
+      "title": "Securely Manage Network Infrastructure",
+      "section": "L",
+      "check_id": "L-123"
+    },
+    {
+      "id": "5.1",
+      "title": "Establish Secure Configurations",
+      "section": "E",
+      "check_id": "E-51"
+    },
+    {
+      "id": "2.2",
+      "title": "Password Policy",
+      "section": "B",
+      "check_id": "B-22"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Ensure 'Password Policy' is enabled (Automated)",
+      "section": "B",
+      "check_id": "B-221"
+    },
+    {
+      "id": "5.2",
+      "title": "Use Unique Passwords",
+      "section": "E",
+      "check_id": "E-52"
+    },
+    {
+      "id": "4.4",
+      "title": "Use Unique Passwords",
+      "section": "D",
+      "check_id": "D-44"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Ensure administrator password retries and lockout time are",
+      "section": "B",
+      "check_id": "B-222"
+    },
+    {
+      "id": "5.4",
+      "title": "Restrict Administrator Privileges to Dedicated",
+      "section": "E",
+      "check_id": "E-54"
+    },
+    {
+      "id": "4.3",
+      "title": "Ensure the Use of Dedicated Administrative Accounts",
+      "section": "D",
+      "check_id": "D-43"
+    },
+    {
+      "id": "2.3",
+      "title": "SNMP",
+      "section": "B",
+      "check_id": "B-23"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Ensure only SNMPv3 is enabled (Automated)",
+      "section": "B",
+      "check_id": "B-231"
+    },
+    {
+      "id": "12.3",
+      "title": "Securely Manage Network Infrastructure",
+      "section": "L",
+      "check_id": "L-123"
+    },
+    {
+      "id": "11.5",
+      "title": "Manage Network Devices Using Multi-Factor",
+      "section": "K",
+      "check_id": "K-115"
+    },
+    {
+      "id": "2.3.2",
+      "title": "Allow only trusted hosts in SNMPv3 (Manual)",
+      "section": "B",
+      "check_id": "B-232"
+    },
+    {
+      "id": "12.3",
+      "title": "Securely Manage Network Infrastructure",
+      "section": "L",
+      "check_id": "L-123"
+    },
+    {
+      "id": "11.1",
+      "title": "Maintain Standard Security Configurations for",
+      "section": "K",
+      "check_id": "K-111"
+    },
+    {
+      "id": "12.2",
+      "title": "Scan for Unauthorized Connections across Trusted",
+      "section": "L",
+      "check_id": "L-122"
+    },
+    {
+      "id": "2.4",
+      "title": "Administrators and Admin Profiles",
+      "section": "B",
+      "check_id": "B-24"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Ensure default 'admin' password is changed (Manual)",
+      "section": "B",
+      "check_id": "B-241"
+    },
+    {
+      "id": "4.7",
+      "title": "Manage Default Accounts on Enterprise Assets and",
+      "section": "D",
+      "check_id": "D-47"
+    },
+    {
+      "id": "4.2",
+      "title": "Change Default Passwords",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Ensure all the login accounts having specific trusted hosts",
+      "section": "B",
+      "check_id": "B-242"
+    },
+    {
+      "id": "5.4",
+      "title": "Restrict Administrator Privileges to Dedicated",
+      "section": "E",
+      "check_id": "E-54"
+    },
+    {
+      "id": "12.8",
+      "title": "Establish and Maintain Dedicated Computing",
+      "section": "L",
+      "check_id": "L-128"
+    },
+    {
+      "id": "4.6",
+      "title": "Use of Dedicated Machines For All Administrative",
+      "section": "D",
+      "check_id": "D-46"
+    },
+    {
+      "id": "11.6",
+      "title": "Use Dedicated Machines For All Network",
+      "section": "K",
+      "check_id": "K-116"
+    },
+    {
+      "id": "11.7",
+      "title": "Manage Network Infrastructure Through a Dedicated",
+      "section": "K",
+      "check_id": "K-117"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Ensure admin accounts with different privileges have their",
+      "section": "B",
+      "check_id": "B-243"
+    },
+    {
+      "id": "5.4",
+      "title": "Restrict Administrator Privileges to Dedicated",
+      "section": "E",
+      "check_id": "E-54"
+    },
+    {
+      "id": "4.3",
+      "title": "Ensure the Use of Dedicated Administrative Accounts",
+      "section": "D",
+      "check_id": "D-43"
+    },
+    {
+      "id": "2.4.4",
+      "title": "Ensure idle timeout time is configured (Automated)",
+      "section": "B",
+      "check_id": "B-244"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "11.1",
+      "title": "Maintain Standard Security Configurations for",
+      "section": "K",
+      "check_id": "K-111"
+    },
+    {
+      "id": "2.4.5",
+      "title": "Ensure only encrypted access channels are enabled",
+      "section": "B",
+      "check_id": "B-245"
+    },
+    {
+      "id": "3.10",
+      "title": "Encrypt Sensitive Data in Transit",
+      "section": "C",
+      "check_id": "C-310"
+    },
+    {
+      "id": "4.5",
+      "title": "Use Multifactor Authentication For All Administrative",
+      "section": "D",
+      "check_id": "D-45"
+    },
+    {
+      "id": "2.4.6",
+      "title": "Apply Local-in Policies (Manual)",
+      "section": "B",
+      "check_id": "B-246"
+    },
+    {
+      "id": "3.3",
+      "title": "Configure Data Access Control Lists",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "12.2",
+      "title": "Establish and Maintain a Secure Network Architecture",
+      "section": "L",
+      "check_id": "L-122"
+    },
+    {
+      "id": "14.6",
+      "title": "Protect Information through Access Control Lists",
+      "section": "N",
+      "check_id": "N-146"
+    },
+    {
+      "id": "2.4.7",
+      "title": "Ensure default Admin ports are changed (Manual)",
+      "section": "B",
+      "check_id": "B-247"
+    },
+    {
+      "id": "3.3",
+      "title": "Configure Data Access Control Lists",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "12.2",
+      "title": "Establish and Maintain a Secure Network",
+      "section": "L",
+      "check_id": "L-122"
+    },
+    {
+      "id": "9.2",
+      "title": "Ensure Only Approved Ports, Protocols and Services",
+      "section": "I",
+      "check_id": "I-92"
+    },
+    {
+      "id": "9.4",
+      "title": "Apply Host-based Firewalls or Port Filtering",
+      "section": "I",
+      "check_id": "I-94"
+    },
+    {
+      "id": "2.5",
+      "title": "High Availability",
+      "section": "B",
+      "check_id": "B-25"
+    },
+    {
+      "id": "2.5.1",
+      "title": "Ensure High Availability configuration is enabled",
+      "section": "B",
+      "check_id": "B-251"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "11.1",
+      "title": "Maintain Standard Security Configurations for",
+      "section": "K",
+      "check_id": "K-111"
+    },
+    {
+      "id": "2.5.2",
+      "title": "Ensure \"Monitor Interfaces\" for High Availability devices is",
+      "section": "B",
+      "check_id": "B-252"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "11.1",
+      "title": "Maintain Standard Security Configurations for",
+      "section": "K",
+      "check_id": "K-111"
+    },
+    {
+      "id": "2.5.3",
+      "title": "Ensure HA Reserved Management Interface is configured",
+      "section": "B",
+      "check_id": "B-253"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "11.1",
+      "title": "Maintain Standard Security Configurations for",
+      "section": "K",
+      "check_id": "K-111"
+    },
+    {
+      "id": "3.1",
+      "title": "Ensure that unused policies are reviewed regularly (Manual)",
+      "section": "C",
+      "check_id": "C-31"
+    },
+    {
+      "id": "4.8",
+      "title": "Uninstall or Disable Unnecessary Services on",
+      "section": "D",
+      "check_id": "D-48"
+    },
+    {
+      "id": "9.2",
+      "title": "Ensure Only Approved Ports, Protocols and Services",
+      "section": "I",
+      "check_id": "I-92"
+    },
+    {
+      "id": "11.2",
+      "title": "Document Traffic Configuration Rules",
+      "section": "K",
+      "check_id": "K-112"
+    },
+    {
+      "id": "3.2",
+      "title": "Ensure that policies do not use \"ALL\" as Service (Automated)",
+      "section": "C",
+      "check_id": "C-32"
+    },
+    {
+      "id": "3.3",
+      "title": "Configure Data Access Control Lists",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "9.2",
+      "title": "Ensure Only Approved Ports, Protocols and Services",
+      "section": "I",
+      "check_id": "I-92"
+    },
+    {
+      "id": "3.3",
+      "title": "Ensure firewall policy denying all traffic to/from Tor, malicious",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "12.2",
+      "title": "Establish and Maintain a Secure Network",
+      "section": "L",
+      "check_id": "L-122"
+    },
+    {
+      "id": "12.2",
+      "title": "Scan for Unauthorized Connections across Trusted",
+      "section": "L",
+      "check_id": "L-122"
+    },
+    {
+      "id": "12.3",
+      "title": "Deny Communications with Known Malicious IP",
+      "section": "L",
+      "check_id": "L-123"
+    },
+    {
+      "id": "13.3",
+      "title": "Monitor and Block Unauthorized Network Traffic",
+      "section": "M",
+      "check_id": "M-133"
+    },
+    {
+      "id": "3.4",
+      "title": "Ensure logging is enabled on all firewall policies (Manual)",
+      "section": "C",
+      "check_id": "C-34"
+    },
+    {
+      "id": "8.1",
+      "title": "Establish and Maintain an Audit Log Management",
+      "section": "H",
+      "check_id": "H-81"
+    },
+    {
+      "id": "13.6",
+      "title": "Collect Network Traffic Flow Logs",
+      "section": "M",
+      "check_id": "M-136"
+    },
+    {
+      "id": "12.5",
+      "title": "Configure Monitoring Systems to Record Network",
+      "section": "L",
+      "check_id": "L-125"
+    },
+    {
+      "id": "12.8",
+      "title": "Deploy NetFlow Collection on Networking Boundary",
+      "section": "L",
+      "check_id": "L-128"
+    },
+    {
+      "id": "4.1",
+      "title": "Intrusion Prevention System (IPS)",
+      "section": "D",
+      "check_id": "D-41"
+    },
+    {
+      "id": "4.1.1",
+      "title": "Detect Botnet connections (Manual)",
+      "section": "D",
+      "check_id": "D-411"
+    },
+    {
+      "id": "13.8",
+      "title": "Deploy a Network Intrusion Prevention Solution",
+      "section": "M",
+      "check_id": "M-138"
+    },
+    {
+      "id": "4.1.2",
+      "title": "Apply IPS Security Profile to Policies (Manual)",
+      "section": "D",
+      "check_id": "D-412"
+    },
+    {
+      "id": "7.5",
+      "title": "Perform Automated Vulnerability Scans of Internal",
+      "section": "G",
+      "check_id": "G-75"
+    },
+    {
+      "id": "12.7",
+      "title": "Deploy Network-Based Intrusion Prevention Systems",
+      "section": "L",
+      "check_id": "L-127"
+    },
+    {
+      "id": "4.2",
+      "title": "Antivirus",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "4.2.1",
+      "title": "Ensure Antivirus Definition Push Updates are Configured",
+      "section": "D",
+      "check_id": "D-421"
+    },
+    {
+      "id": "10.2",
+      "title": "Configure Automatic Anti-Malware Signature",
+      "section": "J",
+      "check_id": "J-102"
+    },
+    {
+      "id": "8.2",
+      "title": "Ensure Anti-Malware Software and Signatures are",
+      "section": "H",
+      "check_id": "H-82"
+    },
+    {
+      "id": "4.2.2",
+      "title": "Apply Antivirus Security Profile to Policies (Manual)",
+      "section": "D",
+      "check_id": "D-422"
+    },
+    {
+      "id": "10.1",
+      "title": "Deploy and Maintain Anti-Malware Software",
+      "section": "J",
+      "check_id": "J-101"
+    },
+    {
+      "id": "10.6",
+      "title": "Centrally Manage Anti-Malware Software",
+      "section": "J",
+      "check_id": "J-106"
+    },
+    {
+      "id": "4.2.3",
+      "title": "Enable Outbreak Prevention Database (Automated)",
+      "section": "D",
+      "check_id": "D-423"
+    },
+    {
+      "id": "10.1",
+      "title": "Deploy and Maintain Anti-Malware Software",
+      "section": "J",
+      "check_id": "J-101"
+    },
+    {
+      "id": "10.6",
+      "title": "Centrally Manage Anti-Malware Software",
+      "section": "J",
+      "check_id": "J-106"
+    },
+    {
+      "id": "8.1",
+      "title": "Utilize Centrally Managed Anti-malware Software",
+      "section": "H",
+      "check_id": "H-81"
+    },
+    {
+      "id": "8.2",
+      "title": "Ensure Anti-Malware Software and Signatures are",
+      "section": "H",
+      "check_id": "H-82"
+    },
+    {
+      "id": "8.3",
+      "title": "Enable Operating System Anti-Exploitation Features/",
+      "section": "H",
+      "check_id": "H-83"
+    },
+    {
+      "id": "8.6",
+      "title": "Centralize Anti-malware Logging",
+      "section": "H",
+      "check_id": "H-86"
+    },
+    {
+      "id": "4.2.4",
+      "title": "Enable AI /heuristic based malware detection (Automated)",
+      "section": "D",
+      "check_id": "D-424"
+    },
+    {
+      "id": "10.7",
+      "title": "Use Behavior-Based Anti-Malware Software",
+      "section": "J",
+      "check_id": "J-107"
+    },
+    {
+      "id": "8.1",
+      "title": "Utilize Centrally Managed Anti-malware Software",
+      "section": "H",
+      "check_id": "H-81"
+    },
+    {
+      "id": "8.2",
+      "title": "Ensure Anti-Malware Software and Signatures are",
+      "section": "H",
+      "check_id": "H-82"
+    },
+    {
+      "id": "8.3",
+      "title": "Enable Operating System Anti-Exploitation Features/",
+      "section": "H",
+      "check_id": "H-83"
+    },
+    {
+      "id": "4.2.5",
+      "title": "Enable grayware detection on antivirus (Automated)",
+      "section": "D",
+      "check_id": "D-425"
+    },
+    {
+      "id": "10.1",
+      "title": "Deploy and Maintain Anti-Malware Software",
+      "section": "J",
+      "check_id": "J-101"
+    },
+    {
+      "id": "10.6",
+      "title": "Centrally Manage Anti-Malware Software",
+      "section": "J",
+      "check_id": "J-106"
+    },
+    {
+      "id": "8.1",
+      "title": "Utilize Centrally Managed Anti-malware Software",
+      "section": "H",
+      "check_id": "H-81"
+    },
+    {
+      "id": "8.2",
+      "title": "Ensure Anti-Malware Software and Signatures are",
+      "section": "H",
+      "check_id": "H-82"
+    },
+    {
+      "id": "4.3",
+      "title": "DNS Filter",
+      "section": "D",
+      "check_id": "D-43"
+    },
+    {
+      "id": "4.3.1",
+      "title": "Enable Botnet C&C Domain Blocking DNS Filter",
+      "section": "D",
+      "check_id": "D-431"
+    },
+    {
+      "id": "9.2",
+      "title": "Use DNS Filtering Services",
+      "section": "I",
+      "check_id": "I-92"
+    },
+    {
+      "id": "8.6",
+      "title": "Centralize Anti-malware Logging",
+      "section": "H",
+      "check_id": "H-86"
+    },
+    {
+      "id": "8.7",
+      "title": "Enable DNS Query Logging",
+      "section": "H",
+      "check_id": "H-87"
+    },
+    {
+      "id": "4.3.2",
+      "title": "Ensure DNS Filter logs all DNS queries and responses",
+      "section": "D",
+      "check_id": "D-432"
+    },
+    {
+      "id": "8.6",
+      "title": "Collect DNS Query Audit Logs",
+      "section": "H",
+      "check_id": "H-86"
+    },
+    {
+      "id": "4.3.3",
+      "title": "Apply DNS Filter Security Profile to Policies (Manual)",
+      "section": "D",
+      "check_id": "D-433"
+    },
+    {
+      "id": "10.1",
+      "title": "Deploy and Maintain Anti-Malware Software",
+      "section": "J",
+      "check_id": "J-101"
+    },
+    {
+      "id": "4.4",
+      "title": "Application Control",
+      "section": "D",
+      "check_id": "D-44"
+    },
+    {
+      "id": "4.4.1",
+      "title": "Block high risk categories on Application Control (Manual)",
+      "section": "D",
+      "check_id": "D-441"
+    },
+    {
+      "id": "3.3",
+      "title": "Configure Data Access Control Lists",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "13.10",
+      "title": "Perform Application Layer Filtering",
+      "section": "M",
+      "check_id": "M-1310"
+    },
+    {
+      "id": "4.4.2",
+      "title": "Block applications running on non-default ports (Automated)",
+      "section": "D",
+      "check_id": "D-442"
+    },
+    {
+      "id": "12.2",
+      "title": "Establish and Maintain a Secure Network",
+      "section": "L",
+      "check_id": "L-122"
+    },
+    {
+      "id": "4.4.3",
+      "title": "Ensure all Application Control related traffic is logged",
+      "section": "D",
+      "check_id": "D-443"
+    },
+    {
+      "id": "13.6",
+      "title": "Collect Network Traffic Flow Logs",
+      "section": "M",
+      "check_id": "M-136"
+    },
+    {
+      "id": "4.4.4",
+      "title": "Apply Application Control Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-444"
+    },
+    {
+      "id": "3.3",
+      "title": "Configure Data Access Control Lists",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "9.5",
+      "title": "Implement Application Firewalls",
+      "section": "I",
+      "check_id": "I-95"
+    },
+    {
+      "id": "18.10",
+      "title": "Deploy Web Application Firewalls (WAFs)",
+      "section": "R",
+      "check_id": "R-1810"
+    },
+    {
+      "id": "5.1",
+      "title": "Automation",
+      "section": "E",
+      "check_id": "E-51"
+    },
+    {
+      "id": "5.1.1",
+      "title": "Enable Compromised Host Quarantine (Automated)",
+      "section": "E",
+      "check_id": "E-511"
+    },
+    {
+      "id": "13.5",
+      "title": "Manage Access Control for Remote Assets",
+      "section": "M",
+      "check_id": "M-135"
+    },
+    {
+      "id": "13.9",
+      "title": "Deploy Port-Level Access Control",
+      "section": "M",
+      "check_id": "M-139"
+    },
+    {
+      "id": "8.1",
+      "title": "Utilize Centrally Managed Anti-malware Software",
+      "section": "H",
+      "check_id": "H-81"
+    },
+    {
+      "id": "8.3",
+      "title": "Enable Operating System Anti-Exploitation Features/",
+      "section": "H",
+      "check_id": "H-83"
+    },
+    {
+      "id": "5.2",
+      "title": "Fabric Connectors",
+      "section": "E",
+      "check_id": "E-52"
+    },
+    {
+      "id": "5.2.1",
+      "title": "Configure Root FortiGate for Security Fabric",
+      "section": "E",
+      "check_id": "E-521"
+    },
+    {
+      "id": "5.2.1.1",
+      "title": "Ensure Security Fabric is Configured (Automated)",
+      "section": "E",
+      "check_id": "E-5211"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "6.1",
+      "title": "SSL VPN",
+      "section": "F",
+      "check_id": "F-61"
+    },
+    {
+      "id": "6.1.1",
+      "title": "Apply a Trusted Signed Certificate for VPN Portal (Manual)",
+      "section": "F",
+      "check_id": "F-611"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "1.8",
+      "title": "Utilize Client Certificates to Authenticate Hardware",
+      "section": "A",
+      "check_id": "A-18"
+    },
+    {
+      "id": "12.2",
+      "title": "Scan for Unauthorized Connections across Trusted",
+      "section": "L",
+      "check_id": "L-122"
+    },
+    {
+      "id": "6.1.2",
+      "title": "Enable Limited TLS Versions for SSL VPN (Manual)",
+      "section": "F",
+      "check_id": "F-612"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "5.1",
+      "title": "Establish Secure Configurations",
+      "section": "E",
+      "check_id": "E-51"
+    },
+    {
+      "id": "11.1",
+      "title": "Maintain Standard Security Configurations for",
+      "section": "K",
+      "check_id": "K-111"
+    },
+    {
+      "id": "7.1",
+      "title": "Configuring the maximum login attempts and lockout period",
+      "section": "G",
+      "check_id": "G-71"
+    },
+    {
+      "id": "4.2",
+      "title": "Establish and Maintain a Secure Configuration",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "12.3",
+      "title": "Securely Manage Network Infrastructure",
+      "section": "L",
+      "check_id": "L-123"
+    },
+    {
+      "id": "8.1",
+      "title": "Enable Logging",
+      "section": "H",
+      "check_id": "H-81"
+    },
+    {
+      "id": "8.1.1",
+      "title": "Enable Event Logging (Automated)",
+      "section": "H",
+      "check_id": "H-811"
+    },
+    {
+      "id": "8.2",
+      "title": "Collect Audit Logs",
+      "section": "H",
+      "check_id": "H-82"
+    },
+    {
+      "id": "8.5",
+      "title": "Collect Detailed Audit Logs",
+      "section": "H",
+      "check_id": "H-85"
+    },
+    {
+      "id": "8.9",
+      "title": "Centralize Audit Logs",
+      "section": "H",
+      "check_id": "H-89"
+    },
+    {
+      "id": "6.2",
+      "title": "Activate audit logging",
+      "section": "F",
+      "check_id": "F-62"
+    },
+    {
+      "id": "6.3",
+      "title": "Enable Detailed Logging",
+      "section": "F",
+      "check_id": "F-63"
+    },
+    {
+      "id": "8.8",
+      "title": "Enable Command-line Audit Logging",
+      "section": "H",
+      "check_id": "H-88"
+    },
+    {
+      "id": "8.2",
+      "title": "Encrypt Logs Sent to FortiAnalyzer / FortiManager",
+      "section": "H",
+      "check_id": "H-82"
+    },
+    {
+      "id": "8.2.1",
+      "title": "Encrypt Log Transmission to FortiAnalyzer / FortiManager",
+      "section": "H",
+      "check_id": "H-821"
+    },
+    {
+      "id": "3.10",
+      "title": "Encrypt Sensitive Data in Transit",
+      "section": "C",
+      "check_id": "C-310"
+    },
+    {
+      "id": "14.4",
+      "title": "Encrypt All Sensitive Information in Transit",
+      "section": "N",
+      "check_id": "N-144"
+    },
+    {
+      "id": "8.3",
+      "title": "Centralized Logging and Reporting",
+      "section": "H",
+      "check_id": "H-83"
+    },
+    {
+      "id": "8.3.1",
+      "title": "Centralized Logging and Reporting (Automated)",
+      "section": "H",
+      "check_id": "H-831"
+    },
+    {
+      "id": "8.1",
+      "title": "Establish and Maintain an Audit Log Management",
+      "section": "H",
+      "check_id": "H-81"
+    },
+    {
+      "id": "8.9",
+      "title": "Centralize Audit Logs",
+      "section": "H",
+      "check_id": "H-89"
+    },
+    {
+      "id": "6.3",
+      "title": "Enable Detailed Logging",
+      "section": "F",
+      "check_id": "F-63"
+    },
+    {
+      "id": "8.6",
+      "title": "Centralize Anti-malware Logging",
+      "section": "H",
+      "check_id": "H-86"
+    },
+    {
+      "id": "1.1",
+      "title": "Ensure DNS server is configured (Automated)",
+      "section": "A",
+      "check_id": "A-11"
+    },
+    {
+      "id": "1.2",
+      "title": "Ensure intra-zone traffic is not always allowed (Manual)",
+      "section": "A",
+      "check_id": "A-12"
+    },
+    {
+      "id": "1.3",
+      "title": "Disable all management related services on WAN port",
+      "section": "A",
+      "check_id": "A-13"
+    },
+    {
+      "id": "2.1",
+      "title": "General Settings",
+      "section": "B",
+      "check_id": "B-21"
+    },
+    {
+      "id": "2.1.1",
+      "title": "Ensure 'Pre-Login Banner' is set (Automated)",
+      "section": "B",
+      "check_id": "B-211"
+    },
+    {
+      "id": "2.1.2",
+      "title": "Ensure 'Post-Login-Banner' is set (Automated)",
+      "section": "B",
+      "check_id": "B-212"
+    },
+    {
+      "id": "2.1.3",
+      "title": "Ensure timezone is properly configured (Manual)",
+      "section": "B",
+      "check_id": "B-213"
+    },
+    {
+      "id": "2.1.4",
+      "title": "Ensure correct system time is configured through NTP",
+      "section": "B",
+      "check_id": "B-214"
+    },
+    {
+      "id": "2.1.5",
+      "title": "Ensure hostname is set (Automated)",
+      "section": "B",
+      "check_id": "B-215"
+    },
+    {
+      "id": "2.1.6",
+      "title": "Ensure the latest firmware is installed (Manual)",
+      "section": "B",
+      "check_id": "B-216"
+    },
+    {
+      "id": "2.1.7",
+      "title": "Disable USB Firmware and configuration installation",
+      "section": "B",
+      "check_id": "B-217"
+    },
+    {
+      "id": "2.1.8",
+      "title": "Disable static keys for TLS (Automated)",
+      "section": "B",
+      "check_id": "B-218"
+    },
+    {
+      "id": "2.1.9",
+      "title": "Enable Global Strong Encryption (Automated)",
+      "section": "B",
+      "check_id": "B-219"
+    },
+    {
+      "id": "2.1.10",
+      "title": "Ensure management GUI listens on secure TLS version",
+      "section": "B",
+      "check_id": "B-2110"
+    },
+    {
+      "id": "2.2",
+      "title": "Password Policy",
+      "section": "B",
+      "check_id": "B-22"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Ensure 'Password Policy' is enabled (Automated)",
+      "section": "B",
+      "check_id": "B-221"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Ensure administrator password retries and lockout time",
+      "section": "B",
+      "check_id": "B-222"
+    },
+    {
+      "id": "2.3",
+      "title": "SNMP",
+      "section": "B",
+      "check_id": "B-23"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Ensure only SNMPv3 is enabled (Automated)",
+      "section": "B",
+      "check_id": "B-231"
+    },
+    {
+      "id": "2.3.2",
+      "title": "Allow only trusted hosts in SNMPv3 (Manual)",
+      "section": "B",
+      "check_id": "B-232"
+    },
+    {
+      "id": "2.4",
+      "title": "Administrators and Admin Profiles",
+      "section": "B",
+      "check_id": "B-24"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Ensure default 'admin' password is changed (Manual)",
+      "section": "B",
+      "check_id": "B-241"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Ensure all the login accounts having specific trusted",
+      "section": "B",
+      "check_id": "B-242"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Ensure admin accounts with different privileges have",
+      "section": "B",
+      "check_id": "B-243"
+    },
+    {
+      "id": "2.4.4",
+      "title": "Ensure idle timeout time is configured (Automated)",
+      "section": "B",
+      "check_id": "B-244"
+    },
+    {
+      "id": "2.4.5",
+      "title": "Ensure only encrypted access channels are enabled",
+      "section": "B",
+      "check_id": "B-245"
+    },
+    {
+      "id": "2.4.6",
+      "title": "Apply Local-in Policies (Manual)",
+      "section": "B",
+      "check_id": "B-246"
+    },
+    {
+      "id": "2.4.7",
+      "title": "Ensure default Admin ports are changed (Manual)",
+      "section": "B",
+      "check_id": "B-247"
+    },
+    {
+      "id": "2.5",
+      "title": "High Availability",
+      "section": "B",
+      "check_id": "B-25"
+    },
+    {
+      "id": "2.5.1",
+      "title": "Ensure High Availability configuration is enabled",
+      "section": "B",
+      "check_id": "B-251"
+    },
+    {
+      "id": "2.5.2",
+      "title": "Ensure \"Monitor Interfaces\" for High Availability devices",
+      "section": "B",
+      "check_id": "B-252"
+    },
+    {
+      "id": "2.5.3",
+      "title": "Ensure HA Reserved Management Interface is",
+      "section": "B",
+      "check_id": "B-253"
+    },
+    {
+      "id": "3.1",
+      "title": "Ensure that unused policies are reviewed regularly",
+      "section": "C",
+      "check_id": "C-31"
+    },
+    {
+      "id": "3.2",
+      "title": "Ensure that policies do not use  \"ALL\" as Service",
+      "section": "C",
+      "check_id": "C-32"
+    },
+    {
+      "id": "3.3",
+      "title": "Ensure firewall policy denying all traffic to/from Tor,",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "3.4",
+      "title": "Ensure logging is enabled on all firewall policies",
+      "section": "C",
+      "check_id": "C-34"
+    },
+    {
+      "id": "4.1",
+      "title": "Intrusion Prevention System (IPS)",
+      "section": "D",
+      "check_id": "D-41"
+    },
+    {
+      "id": "4.1.1",
+      "title": "Detect Botnet connections (Manual)",
+      "section": "D",
+      "check_id": "D-411"
+    },
+    {
+      "id": "4.1.2",
+      "title": "Apply IPS Security Profile to Policies (Manual)",
+      "section": "D",
+      "check_id": "D-412"
+    },
+    {
+      "id": "4.2",
+      "title": "Antivirus",
+      "section": "D",
+      "check_id": "D-42"
+    },
+    {
+      "id": "4.2.1",
+      "title": "Ensure Antivirus Definition Push Updates are Configured",
+      "section": "D",
+      "check_id": "D-421"
+    },
+    {
+      "id": "4.2.2",
+      "title": "Apply Antivirus Security Profile to Policies (Manual)",
+      "section": "D",
+      "check_id": "D-422"
+    },
+    {
+      "id": "4.2.3",
+      "title": "Enable Outbreak Prevention Database (Automated)",
+      "section": "D",
+      "check_id": "D-423"
+    },
+    {
+      "id": "4.2.4",
+      "title": "Enable AI /heuristic based  malware detection",
+      "section": "D",
+      "check_id": "D-424"
+    },
+    {
+      "id": "4.2.5",
+      "title": "Enable grayware detection on antivirus (Automated)",
+      "section": "D",
+      "check_id": "D-425"
+    },
+    {
+      "id": "4.3",
+      "title": "DNS Filter",
+      "section": "D",
+      "check_id": "D-43"
+    },
+    {
+      "id": "4.3.1",
+      "title": "Enable Botnet C&C Domain Blocking DNS Filter",
+      "section": "D",
+      "check_id": "D-431"
+    },
+    {
+      "id": "4.3.2",
+      "title": "Ensure DNS Filter logs all DNS queries and responses",
+      "section": "D",
+      "check_id": "D-432"
+    },
+    {
+      "id": "4.3.3",
+      "title": "Apply DNS Filter Security Profile to Policies (Manual)",
+      "section": "D",
+      "check_id": "D-433"
+    },
+    {
+      "id": "4.4",
+      "title": "Application Control",
+      "section": "D",
+      "check_id": "D-44"
+    },
+    {
+      "id": "4.4.1",
+      "title": "Block high risk categories on Application Control",
+      "section": "D",
+      "check_id": "D-441"
+    },
+    {
+      "id": "4.4.2",
+      "title": "Block applications running on non-default ports",
+      "section": "D",
+      "check_id": "D-442"
+    },
+    {
+      "id": "4.4.3",
+      "title": "Ensure all Application Control related traffic is logged",
+      "section": "D",
+      "check_id": "D-443"
+    },
+    {
+      "id": "4.4.4",
+      "title": "Apply Application Control Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-444"
+    },
+    {
+      "id": "5.1",
+      "title": "Automation",
+      "section": "E",
+      "check_id": "E-51"
+    },
+    {
+      "id": "5.1.1",
+      "title": "Enable Compromised Host Quarantine (Automated)",
+      "section": "E",
+      "check_id": "E-511"
+    },
+    {
+      "id": "5.2",
+      "title": "Fabric Connectors",
+      "section": "E",
+      "check_id": "E-52"
+    },
+    {
+      "id": "5.2.1",
+      "title": "Configure Root FortiGate for Security Fabric",
+      "section": "E",
+      "check_id": "E-521"
+    },
+    {
+      "id": "5.2.1.1",
+      "title": "Ensure Security Fabric is Configured (Automated)",
+      "section": "E",
+      "check_id": "E-5211"
+    },
+    {
+      "id": "6.1",
+      "title": "SSL VPN",
+      "section": "F",
+      "check_id": "F-61"
+    },
+    {
+      "id": "6.1.1",
+      "title": "Apply a Trusted Signed Certificate for VPN Portal",
+      "section": "F",
+      "check_id": "F-611"
+    },
+    {
+      "id": "6.1.2",
+      "title": "Enable Limited TLS Versions for SSL VPN (Manual)",
+      "section": "F",
+      "check_id": "F-612"
+    },
+    {
+      "id": "7.1",
+      "title": "Configuring the maximum login attempts and lockout",
+      "section": "G",
+      "check_id": "G-71"
+    },
+    {
+      "id": "8.1",
+      "title": "Enable Logging",
+      "section": "H",
+      "check_id": "H-81"
+    },
+    {
+      "id": "8.1.1",
+      "title": "Enable Event Logging (Automated)",
+      "section": "H",
+      "check_id": "H-811"
+    },
+    {
+      "id": "8.2",
+      "title": "Encrypt Logs Sent to FortiAnalyzer / FortiManager",
+      "section": "H",
+      "check_id": "H-82"
+    },
+    {
+      "id": "8.2.1",
+      "title": "Encrypt Log Transmission to FortiAnalyzer /",
+      "section": "H",
+      "check_id": "H-821"
+    },
+    {
+      "id": "8.3",
+      "title": "Centralized Logging and Reporting",
+      "section": "H",
+      "check_id": "H-83"
+    },
+    {
+      "id": "8.3.1",
+      "title": "Centralized Logging and Reporting (Automated)",
+      "section": "H",
+      "check_id": "H-831"
+    },
+    {
+      "id": "1.3",
+      "title": "Disable all management related services on WAN port",
+      "section": "A",
+      "check_id": "A-13"
+    },
+    {
+      "id": "2.1.1",
+      "title": "Ensure 'Pre-Login Banner' is set",
+      "section": "B",
+      "check_id": "B-211"
+    },
+    {
+      "id": "2.1.5",
+      "title": "Ensure hostname is set",
+      "section": "B",
+      "check_id": "B-215"
+    },
+    {
+      "id": "2.1.6",
+      "title": "Ensure the latest firmware is installed",
+      "section": "B",
+      "check_id": "B-216"
+    },
+    {
+      "id": "2.1.8",
+      "title": "Disable static keys for TLS",
+      "section": "B",
+      "check_id": "B-218"
+    },
+    {
+      "id": "2.1.9",
+      "title": "Enable Global Strong Encryption",
+      "section": "B",
+      "check_id": "B-219"
+    },
+    {
+      "id": "2.1.10",
+      "title": "Ensure management GUI listens on secure TLS version",
+      "section": "B",
+      "check_id": "B-2110"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Ensure administrator password retries and lockout time",
+      "section": "B",
+      "check_id": "B-222"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Ensure default 'admin' password is changed",
+      "section": "B",
+      "check_id": "B-241"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Ensure admin accounts with different privileges have",
+      "section": "B",
+      "check_id": "B-243"
+    },
+    {
+      "id": "2.4.6",
+      "title": "Apply Local-in Policies",
+      "section": "B",
+      "check_id": "B-246"
+    },
+    {
+      "id": "2.4.7",
+      "title": "Ensure default Admin ports are changed",
+      "section": "B",
+      "check_id": "B-247"
+    },
+    {
+      "id": "4.2.1",
+      "title": "Ensure Antivirus Definition Push Updates are Configured",
+      "section": "D",
+      "check_id": "D-421"
+    },
+    {
+      "id": "4.2.3",
+      "title": "Enable Outbreak Prevention Database",
+      "section": "D",
+      "check_id": "D-423"
+    },
+    {
+      "id": "4.2.4",
+      "title": "Enable AI /heuristic based  malware detection",
+      "section": "D",
+      "check_id": "D-424"
+    },
+    {
+      "id": "4.2.5",
+      "title": "Enable grayware detection on antivirus",
+      "section": "D",
+      "check_id": "D-425"
+    },
+    {
+      "id": "6.1.2",
+      "title": "Enable Limited TLS Versions for SSL VPN",
+      "section": "F",
+      "check_id": "F-612"
+    },
+    {
+      "id": "8.1.1",
+      "title": "Enable Event Logging",
+      "section": "H",
+      "check_id": "H-811"
+    },
+    {
+      "id": "1.1",
+      "title": "Ensure DNS server is configured",
+      "section": "A",
+      "check_id": "A-11"
+    },
+    {
+      "id": "1.3",
+      "title": "Disable all management related services on WAN port",
+      "section": "A",
+      "check_id": "A-13"
+    },
+    {
+      "id": "2.1.1",
+      "title": "Ensure 'Pre-Login Banner' is set",
+      "section": "B",
+      "check_id": "B-211"
+    },
+    {
+      "id": "2.1.2",
+      "title": "Ensure 'Post-Login-Banner' is set",
+      "section": "B",
+      "check_id": "B-212"
+    },
+    {
+      "id": "2.1.3",
+      "title": "Ensure timezone is properly configured",
+      "section": "B",
+      "check_id": "B-213"
+    },
+    {
+      "id": "2.1.4",
+      "title": "Ensure correct system time is configured through NTP",
+      "section": "B",
+      "check_id": "B-214"
+    },
+    {
+      "id": "2.1.5",
+      "title": "Ensure hostname is set",
+      "section": "B",
+      "check_id": "B-215"
+    },
+    {
+      "id": "2.1.6",
+      "title": "Ensure the latest firmware is installed",
+      "section": "B",
+      "check_id": "B-216"
+    },
+    {
+      "id": "2.1.7",
+      "title": "Disable USB Firmware and configuration installation",
+      "section": "B",
+      "check_id": "B-217"
+    },
+    {
+      "id": "2.1.8",
+      "title": "Disable static keys for TLS",
+      "section": "B",
+      "check_id": "B-218"
+    },
+    {
+      "id": "2.1.9",
+      "title": "Enable Global Strong Encryption",
+      "section": "B",
+      "check_id": "B-219"
+    },
+    {
+      "id": "2.1.10",
+      "title": "Ensure management GUI listens on secure TLS version",
+      "section": "B",
+      "check_id": "B-2110"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Ensure 'Password Policy' is enabled",
+      "section": "B",
+      "check_id": "B-221"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Ensure administrator password retries and lockout time",
+      "section": "B",
+      "check_id": "B-222"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Ensure only SNMPv3 is enabled",
+      "section": "B",
+      "check_id": "B-231"
+    },
+    {
+      "id": "2.3.2",
+      "title": "Allow only trusted hosts in SNMPv3",
+      "section": "B",
+      "check_id": "B-232"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Ensure default 'admin' password is changed",
+      "section": "B",
+      "check_id": "B-241"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Ensure all the login accounts having specific trusted",
+      "section": "B",
+      "check_id": "B-242"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Ensure admin accounts with different privileges have",
+      "section": "B",
+      "check_id": "B-243"
+    },
+    {
+      "id": "2.4.4",
+      "title": "Ensure idle timeout time is configured",
+      "section": "B",
+      "check_id": "B-244"
+    },
+    {
+      "id": "2.4.5",
+      "title": "Ensure only encrypted access channels are enabled",
+      "section": "B",
+      "check_id": "B-245"
+    },
+    {
+      "id": "2.4.6",
+      "title": "Apply Local-in Policies",
+      "section": "B",
+      "check_id": "B-246"
+    },
+    {
+      "id": "2.4.7",
+      "title": "Ensure default Admin ports are changed",
+      "section": "B",
+      "check_id": "B-247"
+    },
+    {
+      "id": "2.5.1",
+      "title": "Ensure High Availability configuration is enabled",
+      "section": "B",
+      "check_id": "B-251"
+    },
+    {
+      "id": "2.5.2",
+      "title": "Ensure \"Monitor Interfaces\" for High Availability devices",
+      "section": "B",
+      "check_id": "B-252"
+    },
+    {
+      "id": "2.5.3",
+      "title": "Ensure HA Reserved Management Interface is",
+      "section": "B",
+      "check_id": "B-253"
+    },
+    {
+      "id": "3.1",
+      "title": "Ensure that unused policies are reviewed regularly",
+      "section": "C",
+      "check_id": "C-31"
+    },
+    {
+      "id": "3.2",
+      "title": "Ensure that policies do not use  \"ALL\" as Service",
+      "section": "C",
+      "check_id": "C-32"
+    },
+    {
+      "id": "3.3",
+      "title": "Ensure firewall policy denying all traffic to/from Tor,",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "3.4",
+      "title": "Ensure logging is enabled on all firewall policies",
+      "section": "C",
+      "check_id": "C-34"
+    },
+    {
+      "id": "4.2.1",
+      "title": "Ensure Antivirus Definition Push Updates are Configured",
+      "section": "D",
+      "check_id": "D-421"
+    },
+    {
+      "id": "4.2.3",
+      "title": "Enable Outbreak Prevention Database",
+      "section": "D",
+      "check_id": "D-423"
+    },
+    {
+      "id": "4.2.4",
+      "title": "Enable AI /heuristic based  malware detection",
+      "section": "D",
+      "check_id": "D-424"
+    },
+    {
+      "id": "4.2.5",
+      "title": "Enable grayware detection on antivirus",
+      "section": "D",
+      "check_id": "D-425"
+    },
+    {
+      "id": "4.3.1",
+      "title": "Enable Botnet C&C Domain Blocking DNS Filter",
+      "section": "D",
+      "check_id": "D-431"
+    },
+    {
+      "id": "5.1.1",
+      "title": "Enable Compromised Host Quarantine",
+      "section": "E",
+      "check_id": "E-511"
+    },
+    {
+      "id": "6.1.1",
+      "title": "Apply a Trusted Signed Certificate for VPN Portal",
+      "section": "F",
+      "check_id": "F-611"
+    },
+    {
+      "id": "6.1.2",
+      "title": "Enable Limited TLS Versions for SSL VPN",
+      "section": "F",
+      "check_id": "F-612"
+    },
+    {
+      "id": "8.1.1",
+      "title": "Enable Event Logging",
+      "section": "H",
+      "check_id": "H-811"
+    },
+    {
+      "id": "8.2.1",
+      "title": "Encrypt Log Transmission to FortiAnalyzer /",
+      "section": "H",
+      "check_id": "H-821"
+    },
+    {
+      "id": "8.3.1",
+      "title": "Centralized Logging and Reporting",
+      "section": "H",
+      "check_id": "H-831"
+    },
+    {
+      "id": "1.1",
+      "title": "Ensure DNS server is configured",
+      "section": "A",
+      "check_id": "A-11"
+    },
+    {
+      "id": "1.2",
+      "title": "Ensure intra-zone traffic is not always allowed",
+      "section": "A",
+      "check_id": "A-12"
+    },
+    {
+      "id": "1.3",
+      "title": "Disable all management related services on WAN port",
+      "section": "A",
+      "check_id": "A-13"
+    },
+    {
+      "id": "2.1.1",
+      "title": "Ensure 'Pre-Login Banner' is set",
+      "section": "B",
+      "check_id": "B-211"
+    },
+    {
+      "id": "2.1.2",
+      "title": "Ensure 'Post-Login-Banner' is set",
+      "section": "B",
+      "check_id": "B-212"
+    },
+    {
+      "id": "2.1.3",
+      "title": "Ensure timezone is properly configured",
+      "section": "B",
+      "check_id": "B-213"
+    },
+    {
+      "id": "2.1.4",
+      "title": "Ensure correct system time is configured through NTP",
+      "section": "B",
+      "check_id": "B-214"
+    },
+    {
+      "id": "2.1.5",
+      "title": "Ensure hostname is set",
+      "section": "B",
+      "check_id": "B-215"
+    },
+    {
+      "id": "2.1.6",
+      "title": "Ensure the latest firmware is installed",
+      "section": "B",
+      "check_id": "B-216"
+    },
+    {
+      "id": "2.1.7",
+      "title": "Disable USB Firmware and configuration installation",
+      "section": "B",
+      "check_id": "B-217"
+    },
+    {
+      "id": "2.1.8",
+      "title": "Disable static keys for TLS",
+      "section": "B",
+      "check_id": "B-218"
+    },
+    {
+      "id": "2.1.9",
+      "title": "Enable Global Strong Encryption",
+      "section": "B",
+      "check_id": "B-219"
+    },
+    {
+      "id": "2.1.10",
+      "title": "Ensure management GUI listens on secure TLS version",
+      "section": "B",
+      "check_id": "B-2110"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Ensure 'Password Policy' is enabled",
+      "section": "B",
+      "check_id": "B-221"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Ensure administrator password retries and lockout time",
+      "section": "B",
+      "check_id": "B-222"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Ensure only SNMPv3 is enabled",
+      "section": "B",
+      "check_id": "B-231"
+    },
+    {
+      "id": "2.3.2",
+      "title": "Allow only trusted hosts in SNMPv3",
+      "section": "B",
+      "check_id": "B-232"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Ensure default 'admin' password is changed",
+      "section": "B",
+      "check_id": "B-241"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Ensure all the login accounts having specific trusted",
+      "section": "B",
+      "check_id": "B-242"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Ensure admin accounts with different privileges have",
+      "section": "B",
+      "check_id": "B-243"
+    },
+    {
+      "id": "2.4.4",
+      "title": "Ensure idle timeout time is configured",
+      "section": "B",
+      "check_id": "B-244"
+    },
+    {
+      "id": "2.4.5",
+      "title": "Ensure only encrypted access channels are enabled",
+      "section": "B",
+      "check_id": "B-245"
+    },
+    {
+      "id": "2.4.6",
+      "title": "Apply Local-in Policies",
+      "section": "B",
+      "check_id": "B-246"
+    },
+    {
+      "id": "2.4.7",
+      "title": "Ensure default Admin ports are changed",
+      "section": "B",
+      "check_id": "B-247"
+    },
+    {
+      "id": "2.5.1",
+      "title": "Ensure High Availability configuration is enabled",
+      "section": "B",
+      "check_id": "B-251"
+    },
+    {
+      "id": "2.5.2",
+      "title": "Ensure \"Monitor Interfaces\" for High Availability devices",
+      "section": "B",
+      "check_id": "B-252"
+    },
+    {
+      "id": "2.5.3",
+      "title": "Ensure HA Reserved Management Interface is",
+      "section": "B",
+      "check_id": "B-253"
+    },
+    {
+      "id": "3.1",
+      "title": "Ensure that unused policies are reviewed regularly",
+      "section": "C",
+      "check_id": "C-31"
+    },
+    {
+      "id": "3.2",
+      "title": "Ensure that policies do not use  \"ALL\" as Service",
+      "section": "C",
+      "check_id": "C-32"
+    },
+    {
+      "id": "3.3",
+      "title": "Ensure firewall policy denying all traffic to/from Tor,",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "3.4",
+      "title": "Ensure logging is enabled on all firewall policies",
+      "section": "C",
+      "check_id": "C-34"
+    },
+    {
+      "id": "4.1.2",
+      "title": "Apply IPS Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-412"
+    },
+    {
+      "id": "4.2.1",
+      "title": "Ensure Antivirus Definition Push Updates are Configured",
+      "section": "D",
+      "check_id": "D-421"
+    },
+    {
+      "id": "4.2.3",
+      "title": "Enable Outbreak Prevention Database",
+      "section": "D",
+      "check_id": "D-423"
+    },
+    {
+      "id": "4.2.4",
+      "title": "Enable AI /heuristic based  malware detection",
+      "section": "D",
+      "check_id": "D-424"
+    },
+    {
+      "id": "4.2.5",
+      "title": "Enable grayware detection on antivirus",
+      "section": "D",
+      "check_id": "D-425"
+    },
+    {
+      "id": "4.3.1",
+      "title": "Enable Botnet C&C Domain Blocking DNS Filter",
+      "section": "D",
+      "check_id": "D-431"
+    },
+    {
+      "id": "4.4.4",
+      "title": "Apply Application Control Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-444"
+    },
+    {
+      "id": "5.1.1",
+      "title": "Enable Compromised Host Quarantine",
+      "section": "E",
+      "check_id": "E-511"
+    },
+    {
+      "id": "6.1.1",
+      "title": "Apply a Trusted Signed Certificate for VPN Portal",
+      "section": "F",
+      "check_id": "F-611"
+    },
+    {
+      "id": "6.1.2",
+      "title": "Enable Limited TLS Versions for SSL VPN",
+      "section": "F",
+      "check_id": "F-612"
+    },
+    {
+      "id": "8.1.1",
+      "title": "Enable Event Logging",
+      "section": "H",
+      "check_id": "H-811"
+    },
+    {
+      "id": "8.2.1",
+      "title": "Encrypt Log Transmission to FortiAnalyzer /",
+      "section": "H",
+      "check_id": "H-821"
+    },
+    {
+      "id": "8.3.1",
+      "title": "Centralized Logging and Reporting",
+      "section": "H",
+      "check_id": "H-831"
+    },
+    {
+      "id": "4.1.1",
+      "title": "Detect Botnet connections",
+      "section": "D",
+      "check_id": "D-411"
+    },
+    {
+      "id": "4.2.2",
+      "title": "Apply Antivirus Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-422"
+    },
+    {
+      "id": "4.3.2",
+      "title": "Ensure DNS Filter logs all DNS queries and responses",
+      "section": "D",
+      "check_id": "D-432"
+    },
+    {
+      "id": "4.3.3",
+      "title": "Apply DNS Filter Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-433"
+    },
+    {
+      "id": "4.4.1",
+      "title": "Block high risk categories on Application Control",
+      "section": "D",
+      "check_id": "D-441"
+    },
+    {
+      "id": "4.4.2",
+      "title": "Block applications running on non-default ports",
+      "section": "D",
+      "check_id": "D-442"
+    },
+    {
+      "id": "4.4.3",
+      "title": "Ensure all Application Control related traffic is logged",
+      "section": "D",
+      "check_id": "D-443"
+    },
+    {
+      "id": "5.2.1.1",
+      "title": "Ensure Security Fabric is Configured",
+      "section": "E",
+      "check_id": "E-5211"
+    },
+    {
+      "id": "7.1",
+      "title": "Configuring the maximum login attempts and lockout",
+      "section": "G",
+      "check_id": "G-71"
+    },
+    {
+      "id": "1.2",
+      "title": "Ensure intra-zone traffic is not always allowed",
+      "section": "A",
+      "check_id": "A-12"
+    },
+    {
+      "id": "1.3",
+      "title": "Disable all management related services on WAN port",
+      "section": "A",
+      "check_id": "A-13"
+    },
+    {
+      "id": "2.1.1",
+      "title": "Ensure 'Pre-Login Banner' is set",
+      "section": "B",
+      "check_id": "B-211"
+    },
+    {
+      "id": "2.1.2",
+      "title": "Ensure 'Post-Login-Banner' is set",
+      "section": "B",
+      "check_id": "B-212"
+    },
+    {
+      "id": "2.1.5",
+      "title": "Ensure hostname is set",
+      "section": "B",
+      "check_id": "B-215"
+    },
+    {
+      "id": "2.1.6",
+      "title": "Ensure the latest firmware is installed",
+      "section": "B",
+      "check_id": "B-216"
+    },
+    {
+      "id": "2.1.8",
+      "title": "Disable static keys for TLS",
+      "section": "B",
+      "check_id": "B-218"
+    },
+    {
+      "id": "2.1.9",
+      "title": "Enable Global Strong Encryption",
+      "section": "B",
+      "check_id": "B-219"
+    },
+    {
+      "id": "2.1.10",
+      "title": "Ensure management GUI listens on secure TLS version",
+      "section": "B",
+      "check_id": "B-2110"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Ensure 'Password Policy' is enabled",
+      "section": "B",
+      "check_id": "B-221"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Ensure administrator password retries and lockout time",
+      "section": "B",
+      "check_id": "B-222"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Ensure default 'admin' password is changed",
+      "section": "B",
+      "check_id": "B-241"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Ensure all the login accounts having specific trusted",
+      "section": "B",
+      "check_id": "B-242"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Ensure admin accounts with different privileges have",
+      "section": "B",
+      "check_id": "B-243"
+    },
+    {
+      "id": "2.4.4",
+      "title": "Ensure idle timeout time is configured",
+      "section": "B",
+      "check_id": "B-244"
+    },
+    {
+      "id": "2.4.6",
+      "title": "Apply Local-in Policies",
+      "section": "B",
+      "check_id": "B-246"
+    },
+    {
+      "id": "2.4.7",
+      "title": "Ensure default Admin ports are changed",
+      "section": "B",
+      "check_id": "B-247"
+    },
+    {
+      "id": "2.5.1",
+      "title": "Ensure High Availability configuration is enabled",
+      "section": "B",
+      "check_id": "B-251"
+    },
+    {
+      "id": "2.5.2",
+      "title": "Ensure \"Monitor Interfaces\" for High Availability devices",
+      "section": "B",
+      "check_id": "B-252"
+    },
+    {
+      "id": "2.5.3",
+      "title": "Ensure HA Reserved Management Interface is",
+      "section": "B",
+      "check_id": "B-253"
+    },
+    {
+      "id": "3.2",
+      "title": "Ensure that policies do not use  \"ALL\" as Service",
+      "section": "C",
+      "check_id": "C-32"
+    },
+    {
+      "id": "3.3",
+      "title": "Ensure firewall policy denying all traffic to/from Tor,",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "3.4",
+      "title": "Ensure logging is enabled on all firewall policies",
+      "section": "C",
+      "check_id": "C-34"
+    },
+    {
+      "id": "4.2.1",
+      "title": "Ensure Antivirus Definition Push Updates are Configured",
+      "section": "D",
+      "check_id": "D-421"
+    },
+    {
+      "id": "4.2.2",
+      "title": "Apply Antivirus Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-422"
+    },
+    {
+      "id": "4.2.3",
+      "title": "Enable Outbreak Prevention Database",
+      "section": "D",
+      "check_id": "D-423"
+    },
+    {
+      "id": "4.2.5",
+      "title": "Enable grayware detection on antivirus",
+      "section": "D",
+      "check_id": "D-425"
+    },
+    {
+      "id": "4.3.1",
+      "title": "Enable Botnet C&C Domain Blocking DNS Filter",
+      "section": "D",
+      "check_id": "D-431"
+    },
+    {
+      "id": "4.3.3",
+      "title": "Apply DNS Filter Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-433"
+    },
+    {
+      "id": "4.4.1",
+      "title": "Block high risk categories on Application Control",
+      "section": "D",
+      "check_id": "D-441"
+    },
+    {
+      "id": "4.4.4",
+      "title": "Apply Application Control Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-444"
+    },
+    {
+      "id": "5.2.1.1",
+      "title": "Ensure Security Fabric is Configured",
+      "section": "E",
+      "check_id": "E-5211"
+    },
+    {
+      "id": "6.1.1",
+      "title": "Apply a Trusted Signed Certificate for VPN Portal",
+      "section": "F",
+      "check_id": "F-611"
+    },
+    {
+      "id": "6.1.2",
+      "title": "Enable Limited TLS Versions for SSL VPN",
+      "section": "F",
+      "check_id": "F-612"
+    },
+    {
+      "id": "7.1",
+      "title": "Configuring the maximum login attempts and lockout",
+      "section": "G",
+      "check_id": "G-71"
+    },
+    {
+      "id": "8.1.1",
+      "title": "Enable Event Logging",
+      "section": "H",
+      "check_id": "H-811"
+    },
+    {
+      "id": "8.3.1",
+      "title": "Centralized Logging and Reporting",
+      "section": "H",
+      "check_id": "H-831"
+    },
+    {
+      "id": "1.1",
+      "title": "Ensure DNS server is configured",
+      "section": "A",
+      "check_id": "A-11"
+    },
+    {
+      "id": "1.2",
+      "title": "Ensure intra-zone traffic is not always allowed",
+      "section": "A",
+      "check_id": "A-12"
+    },
+    {
+      "id": "1.3",
+      "title": "Disable all management related services on WAN port",
+      "section": "A",
+      "check_id": "A-13"
+    },
+    {
+      "id": "2.1.1",
+      "title": "Ensure 'Pre-Login Banner' is set",
+      "section": "B",
+      "check_id": "B-211"
+    },
+    {
+      "id": "2.1.2",
+      "title": "Ensure 'Post-Login-Banner' is set",
+      "section": "B",
+      "check_id": "B-212"
+    },
+    {
+      "id": "2.1.3",
+      "title": "Ensure timezone is properly configured",
+      "section": "B",
+      "check_id": "B-213"
+    },
+    {
+      "id": "2.1.4",
+      "title": "Ensure correct system time is configured through NTP",
+      "section": "B",
+      "check_id": "B-214"
+    },
+    {
+      "id": "2.1.5",
+      "title": "Ensure hostname is set",
+      "section": "B",
+      "check_id": "B-215"
+    },
+    {
+      "id": "2.1.6",
+      "title": "Ensure the latest firmware is installed",
+      "section": "B",
+      "check_id": "B-216"
+    },
+    {
+      "id": "2.1.7",
+      "title": "Disable USB Firmware and configuration installation",
+      "section": "B",
+      "check_id": "B-217"
+    },
+    {
+      "id": "2.1.8",
+      "title": "Disable static keys for TLS",
+      "section": "B",
+      "check_id": "B-218"
+    },
+    {
+      "id": "2.1.9",
+      "title": "Enable Global Strong Encryption",
+      "section": "B",
+      "check_id": "B-219"
+    },
+    {
+      "id": "2.1.10",
+      "title": "Ensure management GUI listens on secure TLS version",
+      "section": "B",
+      "check_id": "B-2110"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Ensure 'Password Policy' is enabled",
+      "section": "B",
+      "check_id": "B-221"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Ensure administrator password retries and lockout time",
+      "section": "B",
+      "check_id": "B-222"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Ensure only SNMPv3 is enabled",
+      "section": "B",
+      "check_id": "B-231"
+    },
+    {
+      "id": "2.3.2",
+      "title": "Allow only trusted hosts in SNMPv3",
+      "section": "B",
+      "check_id": "B-232"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Ensure default 'admin' password is changed",
+      "section": "B",
+      "check_id": "B-241"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Ensure all the login accounts having specific trusted",
+      "section": "B",
+      "check_id": "B-242"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Ensure admin accounts with different privileges have",
+      "section": "B",
+      "check_id": "B-243"
+    },
+    {
+      "id": "2.4.4",
+      "title": "Ensure idle timeout time is configured",
+      "section": "B",
+      "check_id": "B-244"
+    },
+    {
+      "id": "2.4.5",
+      "title": "Ensure only encrypted access channels are enabled",
+      "section": "B",
+      "check_id": "B-245"
+    },
+    {
+      "id": "2.4.6",
+      "title": "Apply Local-in Policies",
+      "section": "B",
+      "check_id": "B-246"
+    },
+    {
+      "id": "2.4.7",
+      "title": "Ensure default Admin ports are changed",
+      "section": "B",
+      "check_id": "B-247"
+    },
+    {
+      "id": "2.5.1",
+      "title": "Ensure High Availability configuration is enabled",
+      "section": "B",
+      "check_id": "B-251"
+    },
+    {
+      "id": "2.5.2",
+      "title": "Ensure \"Monitor Interfaces\" for High Availability devices",
+      "section": "B",
+      "check_id": "B-252"
+    },
+    {
+      "id": "2.5.3",
+      "title": "Ensure HA Reserved Management Interface is",
+      "section": "B",
+      "check_id": "B-253"
+    },
+    {
+      "id": "3.1",
+      "title": "Ensure that unused policies are reviewed regularly",
+      "section": "C",
+      "check_id": "C-31"
+    },
+    {
+      "id": "3.2",
+      "title": "Ensure that policies do not use  \"ALL\" as Service",
+      "section": "C",
+      "check_id": "C-32"
+    },
+    {
+      "id": "3.3",
+      "title": "Ensure firewall policy denying all traffic to/from Tor,",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "3.4",
+      "title": "Ensure logging is enabled on all firewall policies",
+      "section": "C",
+      "check_id": "C-34"
+    },
+    {
+      "id": "4.1.2",
+      "title": "Apply IPS Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-412"
+    },
+    {
+      "id": "4.2.1",
+      "title": "Ensure Antivirus Definition Push Updates are Configured",
+      "section": "D",
+      "check_id": "D-421"
+    },
+    {
+      "id": "4.2.2",
+      "title": "Apply Antivirus Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-422"
+    },
+    {
+      "id": "4.2.3",
+      "title": "Enable Outbreak Prevention Database",
+      "section": "D",
+      "check_id": "D-423"
+    },
+    {
+      "id": "4.2.4",
+      "title": "Enable AI /heuristic based  malware detection",
+      "section": "D",
+      "check_id": "D-424"
+    },
+    {
+      "id": "4.2.5",
+      "title": "Enable grayware detection on antivirus",
+      "section": "D",
+      "check_id": "D-425"
+    },
+    {
+      "id": "4.3.1",
+      "title": "Enable Botnet C&C Domain Blocking DNS Filter",
+      "section": "D",
+      "check_id": "D-431"
+    },
+    {
+      "id": "4.3.2",
+      "title": "Ensure DNS Filter logs all DNS queries and responses",
+      "section": "D",
+      "check_id": "D-432"
+    },
+    {
+      "id": "4.3.3",
+      "title": "Apply DNS Filter Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-433"
+    },
+    {
+      "id": "4.4.1",
+      "title": "Block high risk categories on Application Control",
+      "section": "D",
+      "check_id": "D-441"
+    },
+    {
+      "id": "4.4.2",
+      "title": "Block applications running on non-default ports",
+      "section": "D",
+      "check_id": "D-442"
+    },
+    {
+      "id": "4.4.3",
+      "title": "Ensure all Application Control related traffic is logged",
+      "section": "D",
+      "check_id": "D-443"
+    },
+    {
+      "id": "4.4.4",
+      "title": "Apply Application Control Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-444"
+    },
+    {
+      "id": "5.1.1",
+      "title": "Enable Compromised Host Quarantine",
+      "section": "E",
+      "check_id": "E-511"
+    },
+    {
+      "id": "5.2.1.1",
+      "title": "Ensure Security Fabric is Configured",
+      "section": "E",
+      "check_id": "E-5211"
+    },
+    {
+      "id": "6.1.1",
+      "title": "Apply a Trusted Signed Certificate for VPN Portal",
+      "section": "F",
+      "check_id": "F-611"
+    },
+    {
+      "id": "6.1.2",
+      "title": "Enable Limited TLS Versions for SSL VPN",
+      "section": "F",
+      "check_id": "F-612"
+    },
+    {
+      "id": "7.1",
+      "title": "Configuring the maximum login attempts and lockout",
+      "section": "G",
+      "check_id": "G-71"
+    },
+    {
+      "id": "8.1.1",
+      "title": "Enable Event Logging",
+      "section": "H",
+      "check_id": "H-811"
+    },
+    {
+      "id": "8.2.1",
+      "title": "Encrypt Log Transmission to FortiAnalyzer /",
+      "section": "H",
+      "check_id": "H-821"
+    },
+    {
+      "id": "8.3.1",
+      "title": "Centralized Logging and Reporting",
+      "section": "H",
+      "check_id": "H-831"
+    },
+    {
+      "id": "1.1",
+      "title": "Ensure DNS server is configured",
+      "section": "A",
+      "check_id": "A-11"
+    },
+    {
+      "id": "1.2",
+      "title": "Ensure intra-zone traffic is not always allowed",
+      "section": "A",
+      "check_id": "A-12"
+    },
+    {
+      "id": "1.3",
+      "title": "Disable all management related services on WAN port",
+      "section": "A",
+      "check_id": "A-13"
+    },
+    {
+      "id": "2.1.1",
+      "title": "Ensure 'Pre-Login Banner' is set",
+      "section": "B",
+      "check_id": "B-211"
+    },
+    {
+      "id": "2.1.2",
+      "title": "Ensure 'Post-Login-Banner' is set",
+      "section": "B",
+      "check_id": "B-212"
+    },
+    {
+      "id": "2.1.3",
+      "title": "Ensure timezone is properly configured",
+      "section": "B",
+      "check_id": "B-213"
+    },
+    {
+      "id": "2.1.4",
+      "title": "Ensure correct system time is configured through NTP",
+      "section": "B",
+      "check_id": "B-214"
+    },
+    {
+      "id": "2.1.5",
+      "title": "Ensure hostname is set",
+      "section": "B",
+      "check_id": "B-215"
+    },
+    {
+      "id": "2.1.6",
+      "title": "Ensure the latest firmware is installed",
+      "section": "B",
+      "check_id": "B-216"
+    },
+    {
+      "id": "2.1.7",
+      "title": "Disable USB Firmware and configuration installation",
+      "section": "B",
+      "check_id": "B-217"
+    },
+    {
+      "id": "2.1.8",
+      "title": "Disable static keys for TLS",
+      "section": "B",
+      "check_id": "B-218"
+    },
+    {
+      "id": "2.1.9",
+      "title": "Enable Global Strong Encryption",
+      "section": "B",
+      "check_id": "B-219"
+    },
+    {
+      "id": "2.1.10",
+      "title": "Ensure management GUI listens on secure TLS version",
+      "section": "B",
+      "check_id": "B-2110"
+    },
+    {
+      "id": "2.2.1",
+      "title": "Ensure 'Password Policy' is enabled",
+      "section": "B",
+      "check_id": "B-221"
+    },
+    {
+      "id": "2.2.2",
+      "title": "Ensure administrator password retries and lockout time",
+      "section": "B",
+      "check_id": "B-222"
+    },
+    {
+      "id": "2.3.1",
+      "title": "Ensure only SNMPv3 is enabled",
+      "section": "B",
+      "check_id": "B-231"
+    },
+    {
+      "id": "2.3.2",
+      "title": "Allow only trusted hosts in SNMPv3",
+      "section": "B",
+      "check_id": "B-232"
+    },
+    {
+      "id": "2.4.1",
+      "title": "Ensure default 'admin' password is changed",
+      "section": "B",
+      "check_id": "B-241"
+    },
+    {
+      "id": "2.4.2",
+      "title": "Ensure all the login accounts having specific trusted",
+      "section": "B",
+      "check_id": "B-242"
+    },
+    {
+      "id": "2.4.3",
+      "title": "Ensure admin accounts with different privileges have",
+      "section": "B",
+      "check_id": "B-243"
+    },
+    {
+      "id": "2.4.4",
+      "title": "Ensure idle timeout time is configured",
+      "section": "B",
+      "check_id": "B-244"
+    },
+    {
+      "id": "2.4.5",
+      "title": "Ensure only encrypted access channels are enabled",
+      "section": "B",
+      "check_id": "B-245"
+    },
+    {
+      "id": "2.4.6",
+      "title": "Apply Local-in Policies",
+      "section": "B",
+      "check_id": "B-246"
+    },
+    {
+      "id": "2.4.7",
+      "title": "Ensure default Admin ports are changed",
+      "section": "B",
+      "check_id": "B-247"
+    },
+    {
+      "id": "2.5.1",
+      "title": "Ensure High Availability configuration is enabled",
+      "section": "B",
+      "check_id": "B-251"
+    },
+    {
+      "id": "2.5.2",
+      "title": "Ensure \"Monitor Interfaces\" for High Availability devices",
+      "section": "B",
+      "check_id": "B-252"
+    },
+    {
+      "id": "2.5.3",
+      "title": "Ensure HA Reserved Management Interface is",
+      "section": "B",
+      "check_id": "B-253"
+    },
+    {
+      "id": "3.1",
+      "title": "Ensure that unused policies are reviewed regularly",
+      "section": "C",
+      "check_id": "C-31"
+    },
+    {
+      "id": "3.2",
+      "title": "Ensure that policies do not use  \"ALL\" as Service",
+      "section": "C",
+      "check_id": "C-32"
+    },
+    {
+      "id": "3.3",
+      "title": "Ensure firewall policy denying all traffic to/from Tor,",
+      "section": "C",
+      "check_id": "C-33"
+    },
+    {
+      "id": "3.4",
+      "title": "Ensure logging is enabled on all firewall policies",
+      "section": "C",
+      "check_id": "C-34"
+    },
+    {
+      "id": "4.1.1",
+      "title": "Detect Botnet connections",
+      "section": "D",
+      "check_id": "D-411"
+    },
+    {
+      "id": "4.1.2",
+      "title": "Apply IPS Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-412"
+    },
+    {
+      "id": "4.2.1",
+      "title": "Ensure Antivirus Definition Push Updates are Configured",
+      "section": "D",
+      "check_id": "D-421"
+    },
+    {
+      "id": "4.2.2",
+      "title": "Apply Antivirus Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-422"
+    },
+    {
+      "id": "4.2.3",
+      "title": "Enable Outbreak Prevention Database",
+      "section": "D",
+      "check_id": "D-423"
+    },
+    {
+      "id": "4.2.4",
+      "title": "Enable AI /heuristic based  malware detection",
+      "section": "D",
+      "check_id": "D-424"
+    },
+    {
+      "id": "4.2.5",
+      "title": "Enable grayware detection on antivirus",
+      "section": "D",
+      "check_id": "D-425"
+    },
+    {
+      "id": "4.3.1",
+      "title": "Enable Botnet C&C Domain Blocking DNS Filter",
+      "section": "D",
+      "check_id": "D-431"
+    },
+    {
+      "id": "4.3.2",
+      "title": "Ensure DNS Filter logs all DNS queries and responses",
+      "section": "D",
+      "check_id": "D-432"
+    },
+    {
+      "id": "4.3.3",
+      "title": "Apply DNS Filter Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-433"
+    },
+    {
+      "id": "4.4.1",
+      "title": "Block high risk categories on Application Control",
+      "section": "D",
+      "check_id": "D-441"
+    },
+    {
+      "id": "4.4.2",
+      "title": "Block applications running on non-default ports",
+      "section": "D",
+      "check_id": "D-442"
+    },
+    {
+      "id": "4.4.3",
+      "title": "Ensure all Application Control related traffic is logged",
+      "section": "D",
+      "check_id": "D-443"
+    },
+    {
+      "id": "4.4.4",
+      "title": "Apply Application Control Security Profile to Policies",
+      "section": "D",
+      "check_id": "D-444"
+    },
+    {
+      "id": "5.1.1",
+      "title": "Enable Compromised Host Quarantine",
+      "section": "E",
+      "check_id": "E-511"
+    },
+    {
+      "id": "5.2.1.1",
+      "title": "Ensure Security Fabric is Configured",
+      "section": "E",
+      "check_id": "E-5211"
+    },
+    {
+      "id": "6.1.1",
+      "title": "Apply a Trusted Signed Certificate for VPN Portal",
+      "section": "F",
+      "check_id": "F-611"
+    },
+    {
+      "id": "6.1.2",
+      "title": "Enable Limited TLS Versions for SSL VPN",
+      "section": "F",
+      "check_id": "F-612"
+    },
+    {
+      "id": "7.1",
+      "title": "Configuring the maximum login attempts and lockout",
+      "section": "G",
+      "check_id": "G-71"
+    },
+    {
+      "id": "8.1.1",
+      "title": "Enable Event Logging",
+      "section": "H",
+      "check_id": "H-811"
+    },
+    {
+      "id": "8.2.1",
+      "title": "Encrypt Log Transmission to FortiAnalyzer /",
+      "section": "H",
+      "check_id": "H-821"
+    },
+    {
+      "id": "8.3.1",
+      "title": "Centralized Logging and Reporting",
+      "section": "H",
+      "check_id": "H-831"
+    },
+    {
+      "id": "1.1",
+      "title": "Ensure DNS server is",
+      "section": "A",
+      "check_id": "A-11"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Apply application control to",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Enable Event",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Enable Event",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Enable Limited",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Enable Limited",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Apply DNS security policy to",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Ensure",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Ensure",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Block",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Block",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Block",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Block high risk",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Enable",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Enable",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Apply IPS security profile to",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Enable",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Enable",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Enable",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Apply Antivirus",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Ensure",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Detect Botnet",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Ensure that policies do not",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Ensure only encrypted",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Ensure idle timeout time is",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Ensure admin accounts with",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Ensure default 'admin'",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Add Allow only trusted hosts",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Ensure only",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Ensure",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Inquiry Regarding Fortinet",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Ensure logging is enabled",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Ensure firewall policy",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Ensure there are no Unused",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Ensure that unused policies",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Ensure HA Reserved",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Changes for Ensure",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Ensure High Availability",
+      "section": "A",
+      "check_id": "A-120"
+    },
+    {
+      "id": "1.2.0",
+      "title": "Enable Global Strong",
+      "section": "A",
+      "check_id": "A-120"
+    }
+  ]
+}

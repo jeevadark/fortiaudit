@@ -1,0 +1,16 @@
+{
+  "firewall": {
+    "hostname": "192.168.1.1",
+    "connection_method": "ssh",
+    "ssh_port": 22,
+    "ssh_username": "admin"
+  },
+  "audit_scope": {
+    "sections": ["A", "B", "C", "D", "H"],
+    "testing_level": 2
+  },
+  "report_options": {
+    "selected_reports": ["executive_summary", "technical_findings"],
+    "formats": ["html", "pdf"]
+  }
+}

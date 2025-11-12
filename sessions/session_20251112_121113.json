@@ -1,0 +1,71 @@
+{
+  "firewall": {
+    "connection_method": "ssh",
+    "hostname": "10.10.10.1",
+    "ssh_port": 22,
+    "ssh_username": "admin",
+    "ssh_auth_method": "Password (interactive)",
+    "verify_ssl": true
+  },
+  "audit_scope": {
+    "sections": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P"
+    ],
+    "testing_level": 4,
+    "external_tools": {
+      "nmap": true,
+      "snmpwalk": true,
+      "hping3": true,
+      "openvas": true
+    }
+  },
+  "report_options": {
+    "selected_reports": [
+      "executive_summary",
+      "technical_findings",
+      "risk_register",
+      "remediation_roadmap",
+      "compliance_gap",
+      "config_backup"
+    ],
+    "output_dir": "./reports/20251112_121113",
+    "formats": [
+      "html",
+      "pdf",
+      "json",
+      "csv",
+      "markdown"
+    ]
+  },
+  "advanced": {
+    "multi_firewall": false,
+    "comparison_mode": false,
+    "remediation_mode": "generate",
+    "scheduled": false,
+    "log_level": "INFO"
+  },
+  "session_id": "20251112_121113",
+  "compliance": {
+    "frameworks": [
+      "cis",
+      "pci_dss",
+      "nist"
+    ],
+    "custom_pdfs": {}
+  }
+}

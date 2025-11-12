@@ -1,0 +1,83 @@
+FortiAudit Setup Instructions
+==============================
+
+FILES TO COMPLETE:
+------------------
+
+1. fortiaudit/cli.py
+   Source: Artifact "fortiaudit_main_script"
+   Contains: Complete CLI with interactive wizard
+
+2. fortiaudit/core/ssh_connector.py
+   Source: Artifact "core_files_implementation" - FILE 2
+   Contains: SSH connection handler
+
+3. fortiaudit/core/api_connector.py
+   Source: Artifact "core_files_implementation" - FILE 3
+   Contains: REST API client
+
+4. fortiaudit/core/config_parser.py
+   Source: Artifact "core_files_implementation" - FILE 4
+   Contains: Configuration parser
+
+5. fortiaudit/data/cis_benchmark.json
+   Source: YOUR CIS PDF converted to JSON
+   Format: See benchmarks/README.md for structure
+
+GITHUB SETUP:
+-------------
+
+# 1. Create repo on GitHub (https://github.com/new)
+
+# 2. Add remote
+git remote add origin git@github.com:yourusername/fortiaudit.git
+
+# 3. Push
+git push -u origin main
+
+# 4. Create first release
+git tag v1.0.0
+git push --tags
+
+TESTING:
+--------
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run tests (once implemented)
+pytest tests/
+
+# Test CLI
+python fortiaudit/cli.py --help
+
+DOCKER:
+-------
+
+# Build image
+docker build -t fortiaudit:latest .
+
+# Run
+docker run -it fortiaudit:latest
+
+DOCUMENTATION:
+--------------
+
+# Install mkdocs
+pip install mkdocs mkdocs-material
+
+# Serve docs locally
+mkdocs serve
+
+# Deploy to GitHub Pages
+mkdocs gh-deploy
+
+QUESTIONS?
+----------
+
+Check the artifacts in the conversation for complete implementations!
+

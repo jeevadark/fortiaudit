@@ -1,0 +1,81 @@
+{
+  "firewall": {
+    "connection_method": "ssh",
+    "hostname": "10.10.10.1",
+    "ssh_port": 22,
+    "ssh_username": "admin",
+    "ssh_auth_method": "SSH Key",
+    "ssh_key_path": "~/.ssh/id_rsa",
+    "verify_ssl": false
+  },
+  "audit_scope": {
+    "sections": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+      "G",
+      "H",
+      "I",
+      "J",
+      "K",
+      "L",
+      "M",
+      "N",
+      "O",
+      "P"
+    ],
+    "testing_level": 3,
+    "external_tools": {
+      "nmap": true,
+      "snmpwalk": "y",
+      "hping3": "y",
+      "openvas": "y"
+    }
+  },
+  "report_options": {
+    "selected_reports": [
+      "executive_summary",
+      "technical_findings",
+      "risk_register",
+      "remediation_roadmap",
+      "compliance_gap",
+      "config_backup"
+    ],
+    "output_dir": "./reports/20251112_123230",
+    "formats": [
+      "html",
+      "pdf",
+      "json",
+      "csv",
+      "markdown"
+    ]
+  },
+  "advanced": {
+    "multi_firewall": false,
+    "comparison_mode": false,
+    "remediation_mode": "generate",
+    "scheduled": false,
+    "webhook": {
+      "type": "Slack",
+      "url": "1",
+      "notify_on": [
+        "completion",
+        "critical_findings",
+        "errors"
+      ]
+    },
+    "log_level": "INFO"
+  },
+  "session_id": "20251112_123230",
+  "compliance": {
+    "frameworks": [
+      "cis",
+      "pci_dss",
+      "nist"
+    ],
+    "custom_pdfs": {}
+  }
+}
